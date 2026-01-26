@@ -3,4 +3,5 @@
 *.tfstate.*
 terraform.tfvars
 terraform.tfvars.json
+*.tar
 
