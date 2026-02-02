@@ -1,8 +1,8 @@
-from locust import HttpUser, task, between
+from locust import FastHttpUser, task, between
 import time
 import random
 
-class AlbumUser(HttpUser):
+class AlbumUser(FastHttpUser):
     # Simulate a small user think time (avoid tight loop)
     wait_time = between(0.2, 0.5)
 
@@ -22,3 +22,5 @@ class AlbumUser(HttpUser):
             "price": 9.99
         }
         self.client.post("/albums", json=payload, name="POST /albums")
+
+

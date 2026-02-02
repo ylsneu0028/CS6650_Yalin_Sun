@@ -2,21 +2,23 @@ version: "3.8"
 
 services:
   locust-master:
-    image: locustio/locust:latest
+    image: locustio/locust
     ports:
       - "8089:8089"
     volumes:
-      - ./locustfile.py:/mnt/locust/locustfile.py
-    command: -f /mnt/locust/locustfile.py --master
-    environment:
-      - LOCUST_HOST=http://host.docker.internal:8080
+      - ./:/mnt/locust
+    command: >
+      -f /mnt/locust/locustfile.py
+      --master
+      -H http://host.docker.internal:8080
 
   locust-worker:
-    image: locustio/locust:latest
+    image: locustio/locust
     volumes:
-      - ./locustfile.py:/mnt/locust/locustfile.py
-    command: -f /mnt/locust/locustfile.py --worker --master-host locust-master
-    environment:
-      - LOCUST_HOST=http://host.docker.internal:8080
+      - ./:/mnt/locust
+    command: >
+      -f /mnt/locust/locustfile.py
+      --worker
+      --master-host locust-master
     depends_on:
       - locust-master
