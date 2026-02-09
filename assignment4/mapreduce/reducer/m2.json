@@ -1,0 +1,1 @@
+{"chunk_uri":"s3://cs6650-yalin-mapreduce/chunks/hamlet.txt.20260209T080059Z.chunk2.txt","map_output":"s3://cs6650-yalin-mapreduce/map/hamlet.txt.20260209T080059Z.chunk2.txt.20260209T091957Z.json","num_words":9883,"num_unique_words":2196}
