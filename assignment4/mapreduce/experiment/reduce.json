@@ -1,0 +1,1 @@
+{"map_uris":["s3://cs6650-yalin-mapreduce/map/hamlet.txt.20260213T062538Z.chunk0.txt.20260213T062706Z.json"],"reduce_output":"s3://cs6650-yalin-mapreduce/reduce/final.20260213T062913Z.json","total_unique_words":4701,"generated_at_utc":"2026-02-13T06:29:13Z"}
