@@ -133,6 +133,17 @@ Assume the public IP is PUBLIC_IP.
 
 curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/1
 
+response example:
+
+{
+  "product_id": 1,
+  "sku": "ABC-123-XYZ",
+  "manufacturer": "Acme Corporation",
+  "category_id": 456,
+  "weight": 1250,
+  "some_other_id": 789
+}
+
 ### 404 Not Found – Product Does Not Exist
 
 curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/999
@@ -160,12 +171,31 @@ curl -i -X POST \
   }' \
   http://PUBLIC_IP:8080/products/1/details
 
+response: (no body, just 204 status)
+
 ### 400 Bad Request – Invalid Input
 curl -i -X POST \
   -H "X-API-Key: test" \
   -H "Content-Type: application/json" \
   -d '{}' \
   http://PUBLIC_IP:8080/products/1/details
+
+response example:
+{
+  "error": "INVALID_INPUT",
+  "message": "The provided input data is invalid",
+  "details": "product_id must be a positive integer"
+}
+
+### 404 Not Found
+curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/999/details
+
+response example:
+{
+  "error": "NOT_FOUND",
+  "message": "Product not found",
+  "details": "No product exists with the given productId"
+}
 
 ## Cleanup
 
