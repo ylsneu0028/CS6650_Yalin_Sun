@@ -1,171 +1,180 @@
-Product API (Homework 5 – CS6650)
+# Product API (Homework 5 - CS6650)
 
-This project implements the Product API for a very simple e-commerce system, based strictly on the provided OpenAPI (api.yaml) specification.
-Only the Products endpoints are implemented for this assignment.
+This project implements the **Product API** part of the provided OpenAPI specification.
 
-The service supports:
+The system is deployed on AWS ECS (Fargate) with:
 
-Retrieving product details by product ID
+- Dockerized Go-based Product API
 
-Adding or updating product details
+- Amazon ECR for container images
 
-All product data is stored in memory using a hashmap, as required by the assignment.
+- Terraform for fully automated infrastructure provisioning
 
-Implemented Endpoints (Products Only)
-GET /products/{productId}
+- CloudWatch for centralized logging
 
-Retrieve a product's details using its unique identifier.
+With a few Terraform commands, the entire system (ECR, ECS cluster, service, networking) can be deployed on any machine with proper AWS credentials.
 
-Responses
+## Implemented Endpoints
 
-200 OK – Product found
+### GET /products/{productId}
 
-404 Not Found – Product does not exist
+Retrieve a product by its ID.
 
-400 Bad Request – Invalid product ID
+Responses：
+  - 200: returns Product JSON when found
+  - 404: returns Error JSON when not found
+  - 500 Internal Server Error
 
-POST /products/{productId}/details
+### POST /products/{productId}/details
 
-Add or update detailed information for a specific product.
+Add or update product details.
 
-Responses
+Responses：
+  - 204: product details updated successfully (no response body)
+  - 400: invalid input JSON / schema validation error
+  - 404: product not found
+  - 500 Internal Server Error
 
-204 No Content – Product details updated successfully
+## Authentication
 
-400 Bad Request – Invalid input data
+All requests must include the following header:
+  - ‘X-API-Key: test’
 
-404 Not Found – Product not found
+Requests without this header will be rejected.
 
-Note: According to the OpenAPI specification, updating product details returns 204 No Content with no response body.
+## Deploying the System on a New Machine
 
-Data Model
-Product
-{
-  "product_id": 1,
-  "sku": "ABC-123-XYZ",
-  "manufacturer": "Acme Corporation",
-  "category_id": 456,
-  "weight": 1250,
-  "some_other_id": 789
-}
+### Prerequisites
 
+Ensure the following tools are installed:
 
-All required fields and constraints (minimum values, string length limits) are validated exactly as specified in api.yaml.
+  - Docker Desktop
 
-Error Response
-{
-  "error": "INVALID_INPUT",
-  "message": "Invalid input data",
-  "details": "product_id must match path productId"
-}
+  - Terraform ≥ 1.6
 
-In-Memory Storage
+  - AWS CLI
 
-Products are stored in a thread-safe in-memory hashmap (map[int32]Product)
+  - An active AWS Learner Lab / AWS account with permissions for:
 
-The data does not persist across restarts
+    - ECS
 
-The server is initialized with a small set of preloaded products so that the update endpoint (POST /products/{productId}/details) can return 204 as defined in the specification
+    - ECR
 
-Running Locally (Without Docker)
-Prerequisites
+    - EC2 (VPC, Security Groups)
 
-Go 1.21 or newer
+    - AM
 
-Steps
-go mod tidy
-go run main.go
+    - CloudWatch Logs
 
+### Step 1: Configure AWS Credentials
 
-The server will start on:
+Export AWS credentials (recommended for Learner Lab):
+export AWS_ACCESS_KEY_ID=...
+export AWS_SECRET_ACCESS_KEY=...
+export AWS_SESSION_TOKEN=...
+export AWS_DEFAULT_REGION=us-west-2
 
-http://localhost:8080
+Verify access:
+aws sts get-caller-identity
 
-Running with Docker
-Build the Docker image
-docker build -t product-api .
+### Step 2: Initialize Terraform
 
-Run the container
-docker run --rm -p 8080:8080 product-api
+cd terraform
+terraform init
 
-API Usage Examples
-Get an Existing Product
-curl -i http://localhost:8080/products/1
+### Step 3: Deploy Infrastructure and Application
 
+terraform apply -auto-approve
 
-Response
+This command will automatically:
 
-HTTP/1.1 200 OK
-Content-Type: application/json
+  1. Create an ECR repository
 
-{
-  "product_id": 1,
-  "sku": "ABC-123-XYZ",
-  "manufacturer": "Acme Corporation",
-  "category_id": 456,
-  "weight": 1250,
-  "some_other_id": 789
-}
+  2. Build the Product API Docker image
 
-Get a Non-Existing Product
-curl -i http://localhost:8080/products/999
+  3. Push the image to ECR
 
+  4. Create ECS cluster and service
 
-Response
+  5. Launch the Product API on AWS Fargate
 
-HTTP/1.1 404 Not Found
+### Step 4: Verify Service Status
+
+In the AWS Console:
+
+  - ECS → Clusters → yalin-product-api-cluster
+
+  - Confirm the service shows 1/1 tasks running
+
+Logs can be found in:
+  CloudWatch → Log groups → /ecs/yalin-product-api
+
+### Step 5: Obtain the Public IP
+
+After the task is running, retrieve the public IP of the ECS task:
+
+aws ec2 describe-network-interfaces \
+  --network-interface-ids $(aws ecs describe-tasks \
+    --cluster yalin-product-api-cluster \
+    --tasks $(aws ecs list-tasks \
+      --cluster yalin-product-api-cluster \
+      --service-name yalin-product-api \
+      --query 'taskArns[0]' --output text) \
+    --query "tasks[0].attachments[0].details[?name=='networkInterfaceId'].value" \
+    --output text) \
+  --query 'NetworkInterfaces[0].Association.PublicIp' \
+  --output text
+
+## Example API Requests (curl)
+
+Assume the public IP is PUBLIC_IP.
+
+### 200 OK – Product Found
+
+curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/1
+
+### 404 Not Found – Product Does Not Exist
+
+curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/999
+
+Response example:
 
 {
   "error": "NOT_FOUND",
-  "message": "Product not found"
+  "message": "Product not found",
+  "details": "No product exists with the given productId"
 }
 
-Update Product Details
-curl -i -X POST http://localhost:8080/products/1/details \
+### 204 No Content – Add Product Details
+
+curl -i -X POST \
+  -H "X-API-Key: test" \
   -H "Content-Type: application/json" \
   -d '{
     "product_id": 1,
-    "sku": "ABC-123-XYZ",
-    "manufacturer": "Acme Corporation",
-    "category_id": 456,
-    "weight": 1250,
-    "some_other_id": 789
-  }'
+    "sku": "ABC-123",
+    "manufacturer": "Acme",
+    "category_id": 10,
+    "weight": 1000,
+    "some_other_id": 42
+  }' \
+  http://PUBLIC_IP:8080/products/1/details
 
-
-Response
-
-HTTP/1.1 204 No Content
-
-Invalid Input Example
-curl -i -X POST http://localhost:8080/products/1/details \
+### 400 Bad Request – Invalid Input
+curl -i -X POST \
+  -H "X-API-Key: test" \
   -H "Content-Type: application/json" \
-  -d '{
-    "product_id": 2,
-    "sku": "",
-    "manufacturer": "Acme Corporation",
-    "category_id": 456,
-    "weight": 1250,
-    "some_other_id": 789
-  }'
+  -d '{}' \
+  http://PUBLIC_IP:8080/products/1/details
+
+## Cleanup
+
+To avoid unnecessary AWS charges:
+terraform destroy -auto-approve
 
 
-Response
 
-HTTP/1.1 400 Bad Request
 
-{
-  "error": "INVALID_INPUT",
-  "message": "product_id mismatch",
-  "details": "product_id must match path productId"
-}
 
-Notes on OpenAPI Compliance
 
-All endpoints strictly follow the provided api.yaml contract
 
-HTTP status codes match the specification exactly
-
-Input validation enforces all required fields and constraints
-
-Error responses conform to the defined Error schema
