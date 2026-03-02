@@ -28,7 +28,7 @@ variable "log_retention_days" {
   default = 7
 }
 
-# ---------- A7 追加变量 ----------
+# ---------- Adding Variables ----------
 variable "resilience_mode" {
   type    = string
   default = "fix"

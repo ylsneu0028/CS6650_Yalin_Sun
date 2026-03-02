@@ -1,46 +1,14 @@
-# Product API (Homework 5 - CS6650)
+# Crashing and Recovering (Midterm Mastery - CS6650)
 
-This project implements the **Product API** part of the provided OpenAPI specification.
+This project demonstrates how a distributed system can fail under unstable dependencies, and how resilience patterns can improve system stability.
 
-The system is deployed on AWS ECS (Fargate) with:
+The experiment compares two deployments:
 
-- Dockerized Go-based Product API
+1. Problem version – no protection against unstable dependencies
 
-- Amazon ECR for container images
+2. Fixed version – uses resilience techniques to prevent cascading failures
 
-- Terraform for fully automated infrastructure provisioning
-
-- CloudWatch for centralized logging
-
-With a few Terraform commands, the entire system (ECR, ECS cluster, service, networking) can be deployed on any machine with proper AWS credentials.
-
-## Implemented Endpoints
-
-### GET /products/{productId}
-
-Retrieve a product by its ID.
-
-Responses：
-  - 200: returns Product JSON when found
-  - 404: returns Error JSON when not found
-  - 500 Internal Server Error
-
-### POST /products/{productId}/details
-
-Add or update product details.
-
-Responses：
-  - 204: product details updated successfully (no response body)
-  - 400: invalid input JSON / schema validation error
-  - 404: product not found
-  - 500 Internal Server Error
-
-## Authentication
-
-All requests must include the following header:
-  - ‘X-API-Key: test’
-
-Requests without this header will be rejected.
+The system is deployed on AWS ECS (Fargate) using Terraform.
 
 ## Deploying the System on a New Machine
 
@@ -82,34 +50,13 @@ aws sts get-caller-identity
 cd terraform
 terraform init
 
-### Step 3: Deploy Infrastructure and Application
+### Step 3: Deploy the problem version with flaky downstream:
 
-terraform apply -auto-approve
+terraform apply \
+  -var="resilience_mode=problem" \
+  -var="downstream_mode=flaky"
 
-This command will automatically:
-
-  1. Create an ECR repository
-
-  2. Build the Product API Docker image
-
-  3. Push the image to ECR
-
-  4. Create ECS cluster and service
-
-  5. Launch the Product API on AWS Fargate
-
-### Step 4: Verify Service Status
-
-In the AWS Console:
-
-  - ECS → Clusters → yalin-product-api-cluster
-
-  - Confirm the service shows 1/1 tasks running
-
-Logs can be found in:
-  CloudWatch → Log groups → /ecs/yalin-product-api
-
-### Step 5: Obtain the Public IP
+### Step 4: Obtain the Public IP
 
 After the task is running, retrieve the public IP of the ECS task:
 
@@ -125,82 +72,34 @@ aws ec2 describe-network-interfaces \
   --query 'NetworkInterfaces[0].Association.PublicIp' \
   --output text
 
-## Example API Requests (curl)
+### Step 5: Verify the Service
+#### Health check:
+curl http://$PUBLIC_IP:8080/health
 
-Assume the public IP is PUBLIC_IP.
+#### Search endpoint:
+curl -H "X-API-Key: test" \
+"http://$PUBLIC_IP:8080/products/search?q=alpha"
 
-### 200 OK – Product Found
+#### Debug endpoint:
+curl http://$PUBLIC_IP:8080/debug/stats
 
-curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/1
+### Step 6: Run Load Test
+#### Start Locust:
+locust -f locustfile.py
 
-response example:
+#### Open browser:
+http://localhost:8089
 
-{
-  "product_id": 1,
-  "sku": "ABC-123-XYZ",
-  "manufacturer": "Acme Corporation",
-  "category_id": 456,
-  "weight": 1250,
-  "some_other_id": 789
-}
+#### Use the ECS IP as host:
+http://PUBLIC_IP:8080
 
-### 404 Not Found – Product Does Not Exist
+### Step 7 Deploy the Fixed Version
+terraform apply \
+  -var="resilience_mode=fix" \
+  -var="downstream_mode=flaky"
 
-curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/999
-
-Response example:
-
-{
-  "error": "NOT_FOUND",
-  "message": "Product not found",
-  "details": "No product exists with the given productId"
-}
-
-### 204 No Content – Add Product Details
-
-curl -i -X POST \
-  -H "X-API-Key: test" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "product_id": 1,
-    "sku": "ABC-123",
-    "manufacturer": "Acme",
-    "category_id": 10,
-    "weight": 1000,
-    "some_other_id": 42
-  }' \
-  http://PUBLIC_IP:8080/products/1/details
-
-response: (no body, just 204 status)
-
-### 400 Bad Request – Invalid Input
-curl -i -X POST \
-  -H "X-API-Key: test" \
-  -H "Content-Type: application/json" \
-  -d '{}' \
-  http://PUBLIC_IP:8080/products/1/details
-
-response example:
-{
-  "error": "INVALID_INPUT",
-  "message": "The provided input data is invalid",
-  "details": "product_id must be a positive integer"
-}
-
-### 404 Not Found
-curl -i -H "X-API-Key: test" http://PUBLIC_IP:8080/products/999/details
-
-response example:
-{
-  "error": "NOT_FOUND",
-  "message": "Product not found",
-  "details": "No product exists with the given productId"
-}
-
-## Cleanup
-
-To avoid unnecessary AWS charges:
-terraform destroy -auto-approve
+### Step 8 Clean Up Resources
+terraform destroy
 
 
 
