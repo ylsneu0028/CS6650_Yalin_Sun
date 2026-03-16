@@ -22,7 +22,7 @@ output "ecs_cluster_name" {
   value = aws_ecs_cluster.main.name
 }
 
-# Part III
+# Part III (only when enable_lambda_processor = true)
 output "lambda_order_processor_name" {
-  value = aws_lambda_function.order_processor.function_name
+  value = var.enable_lambda_processor ? aws_lambda_function.order_processor[0].function_name : null
 }

@@ -64,8 +64,8 @@ module "alb" {
   tags                  = local.common_tags
 }
 
-data "aws_iam_role" "lab_role" {
-  name = "LabRole"
+data "aws_iam_role" "ecs_task" {
+  name = var.ecs_iam_role_name
 }
 
 resource "aws_ecs_cluster" "main" {
@@ -108,8 +108,8 @@ module "receiver_service" {
   cpu                     = var.receiver_cpu
   memory                  = var.receiver_memory
   desired_count           = var.receiver_desired_count
-  task_execution_role_arn = data.aws_iam_role.lab_role.arn
-  task_role_arn           = data.aws_iam_role.lab_role.arn
+  task_execution_role_arn = data.aws_iam_role.ecs_task.arn
+  task_role_arn           = data.aws_iam_role.ecs_task.arn
   image                   = docker_registry_image.receiver.name
   container_name          = "receiver"
   container_port          = var.receiver_container_port
@@ -147,8 +147,8 @@ module "processor_service" {
   cpu                     = var.processor_cpu
   memory                  = var.processor_memory
   desired_count           = var.processor_desired_count
-  task_execution_role_arn = data.aws_iam_role.lab_role.arn
-  task_role_arn           = data.aws_iam_role.lab_role.arn
+  task_execution_role_arn = data.aws_iam_role.ecs_task.arn
+  task_role_arn           = data.aws_iam_role.ecs_task.arn
   image                   = docker_registry_image.processor.name
   container_name          = "processor"
   container_port          = 8080

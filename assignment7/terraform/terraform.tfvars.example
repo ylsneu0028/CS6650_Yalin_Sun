@@ -1,0 +1,18 @@
+# Copy to terraform.tfvars and edit. Do not commit secrets.
+
+aws_region              = "us-west-2"
+project_name            = "assignment7-ecommerce"
+receiver_container_port = 8080
+receiver_source_dir     = "../receiver"
+processor_source_dir    = "../processor"
+receiver_image_tag      = "latest"
+processor_image_tag     = "latest"
+receiver_desired_count  = 1
+processor_desired_count = 1
+processor_worker_count  = 1
+
+# Required in account 819551470797 (replace with your IAM role name; NOT LabRole unless it exists)
+# ecs_iam_role_name = "YourEcsTaskRoleName"
+
+# Set true only after: lambda-processor/deployment.zip exists and IAM allows Lambda
+# enable_lambda_processor = false
