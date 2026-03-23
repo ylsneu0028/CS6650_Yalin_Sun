@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"log"
 	"net/http"
 	"os"
@@ -284,11 +285,10 @@ func addProductDetailsHandler(store *Store) gin.HandlerFunc {
 func main() {
 	store := NewStore()
 
-	db, err := openShoppingDB()
-	if err != nil {
-		log.Fatalf("database: %v", err)
+	backend := strings.ToLower(strings.TrimSpace(os.Getenv("CART_BACKEND")))
+	if backend == "" {
+		backend = "mysql"
 	}
-	defer db.Close()
 
 	r := gin.New()
 	r.Use(gin.Logger())
@@ -298,10 +298,34 @@ func main() {
 	r.GET("/products/:productId", getProductHandler(store))
 	r.POST("/products/:productId/details", addProductDetailsHandler(store))
 
-	r.POST("/shopping-carts", postShoppingCart(db))
-	r.GET("/shopping-carts/:shoppingCartId", getShoppingCart(db))
-	r.POST("/shopping-carts/:shoppingCartId/items", postCartItems(db, store))
-	r.DELETE("/shopping-carts/:shoppingCartId/items/:productId", deleteCartItem(db))
+	if backend == "dynamodb" {
+		table := strings.TrimSpace(os.Getenv("DYNAMODB_TABLE_NAME"))
+		if table == "" {
+			log.Fatal("DYNAMODB_TABLE_NAME is required when CART_BACKEND=dynamodb")
+		}
+		region := strings.TrimSpace(os.Getenv("AWS_REGION"))
+		if region == "" {
+			region = "us-west-2"
+		}
+		dds, err := newDynamoCartStore(context.Background(), region, table)
+		if err != nil {
+			log.Fatalf("dynamodb: %v", err)
+		}
+		r.POST("/shopping-carts", postShoppingCartDynamo(dds))
+		r.GET("/shopping-carts/:shoppingCartId", getShoppingCartDynamo(dds))
+		r.POST("/shopping-carts/:shoppingCartId/items", postCartItemsDynamo(dds, store))
+		r.DELETE("/shopping-carts/:shoppingCartId/items/:productId", deleteCartItemDynamo(dds))
+	} else {
+		db, err := openShoppingDB()
+		if err != nil {
+			log.Fatalf("database: %v", err)
+		}
+		defer db.Close()
+		r.POST("/shopping-carts", postShoppingCart(db))
+		r.GET("/shopping-carts/:shoppingCartId", getShoppingCart(db))
+		r.POST("/shopping-carts/:shoppingCartId/items", postCartItems(db, store))
+		r.DELETE("/shopping-carts/:shoppingCartId/items/:productId", deleteCartItem(db))
+	}
 
 	addr := ":8080"
 	if p := os.Getenv("PORT"); p != "" {

@@ -18,12 +18,21 @@ module "logging" {
   retention_in_days = var.log_retention_days
 }
 
+locals {
+  effective_private_subnet_ids = length(var.private_subnet_ids) > 0 ? var.private_subnet_ids : module.network.private_subnet_ids
+}
+
+module "dynamodb" {
+  source      = "./modules/dynamodb"
+  name_prefix = replace(var.service_name, "_", "-")
+}
+
 module "rds" {
   source = "./modules/rds"
 
   name_prefix                = replace(var.service_name, "_", "-")
   vpc_id                     = module.network.vpc_id
-  subnet_ids                 = module.network.subnet_ids
+  subnet_ids                 = local.effective_private_subnet_ids
   allowed_security_group_ids = [module.network.security_group_id]
   database_name              = var.db_name
   master_username            = var.db_username
@@ -38,6 +47,21 @@ locals {
   ecs_role_arn = var.ecs_iam_role_arn != "" ? var.ecs_iam_role_arn : (
     var.create_ecs_iam_role ? aws_iam_role.ecs_task[0].arn : data.aws_iam_role.ecs[0].arn
   )
+
+  ecs_container_environment = concat(
+    [
+      { name = "DB_HOST", value = module.rds.address },
+      { name = "DB_PORT", value = tostring(module.rds.port) },
+      { name = "DB_USER", value = module.rds.master_username },
+      { name = "DB_PASSWORD", value = module.rds.master_password },
+      { name = "DB_NAME", value = module.rds.database_name },
+    ],
+    var.cart_backend == "dynamodb" ? [
+      { name = "CART_BACKEND", value = "dynamodb" },
+      { name = "DYNAMODB_TABLE_NAME", value = module.dynamodb.table_name },
+      { name = "AWS_REGION", value = var.aws_region },
+    ] : [{ name = "CART_BACKEND", value = "mysql" }]
+  )
 }
 
 module "ecs" {
@@ -45,20 +69,15 @@ module "ecs" {
   service_name       = var.service_name
   image              = "${module.ecr.repository_url}:latest"
   container_port     = var.container_port
-  subnet_ids         = module.network.subnet_ids
+  # ECS must use public subnets only; including RDS private subnets breaks inbound access.
+  subnet_ids         = module.network.public_subnet_ids
   security_group_ids = [module.network.security_group_id]
   execution_role_arn = local.ecs_role_arn
   task_role_arn      = local.ecs_role_arn
   log_group_name     = module.logging.log_group_name
   ecs_count          = var.ecs_count
   region             = var.aws_region
-  container_environment = [
-    { name = "DB_HOST", value = module.rds.address },
-    { name = "DB_PORT", value = tostring(module.rds.port) },
-    { name = "DB_USER", value = module.rds.master_username },
-    { name = "DB_PASSWORD", value = module.rds.master_password },
-    { name = "DB_NAME", value = module.rds.database_name },
-  ]
+  container_environment = local.ecs_container_environment
 }
 
 

@@ -17,3 +17,8 @@ output "rds_port" {
   description = "MySQL port"
   value       = module.rds.port
 }
+
+output "dynamodb_table_name" {
+  description = "DynamoDB table for shopping carts (Step II)"
+  value       = module.dynamodb.table_name
+}

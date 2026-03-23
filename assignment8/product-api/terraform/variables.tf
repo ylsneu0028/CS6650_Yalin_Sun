@@ -12,6 +12,17 @@ variable "vpc_id" {
   description = "Leave empty to use the default VPC; set when no default VPC exists in this region"
 }
 
+variable "private_subnet_ids" {
+  type        = list(string)
+  default     = []
+  description = "Optional override for RDS private subnet IDs; leave empty to use network module generated private subnets"
+
+  validation {
+    condition     = length(var.private_subnet_ids) == 0 || length(var.private_subnet_ids) >= 2
+    error_message = "private_subnet_ids must be empty (auto mode) or include at least 2 subnet IDs."
+  }
+}
+
 # Learner Lab uses LabRole; personal AWS accounts often need a different role name or a full ARN.
 variable "ecs_iam_role_name" {
   type        = string
@@ -71,4 +82,16 @@ variable "db_username" {
   type        = string
   default     = "storeuser"
   description = "MySQL master username (avoid reserved names like admin)"
+}
+
+# Step II: set to "dynamodb" for NoSQL cart backend (same API as MySQL Step I)
+variable "cart_backend" {
+  type        = string
+  default     = "mysql"
+  description = "Shopping cart storage: mysql | dynamodb"
+
+  validation {
+    condition     = contains(["mysql", "dynamodb"], var.cart_backend)
+    error_message = "cart_backend must be mysql or dynamodb."
+  }
 }

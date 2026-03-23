@@ -15,6 +15,8 @@ type createCartRequest struct {
 
 type createCartResponse struct {
 	ShoppingCartID int64 `json:"shopping_cart_id"`
+	CustomerID     int32 `json:"customer_id"`
+	Items          []cartItemJSON `json:"items"`
 }
 
 type addCartItemRequest struct {
@@ -73,7 +75,11 @@ func postShoppingCart(db *sql.DB) gin.HandlerFunc {
 			})
 			return
 		}
-		c.JSON(http.StatusCreated, createCartResponse{ShoppingCartID: id})
+		c.JSON(http.StatusCreated, createCartResponse{
+			ShoppingCartID: id,
+			CustomerID:     body.CustomerID,
+			Items:          []cartItemJSON{},
+		})
 	}
 }
 
