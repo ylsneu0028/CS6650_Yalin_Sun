@@ -2,3 +2,9 @@
 **.tfvars
 **.tfstate
 **.tfstate.*
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
