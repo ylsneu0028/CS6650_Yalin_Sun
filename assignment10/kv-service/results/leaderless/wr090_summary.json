@@ -1,0 +1,12 @@
+{
+  "mode": "leaderless",
+  "write_ratio": 0.9,
+  "requests": 2500,
+  "concurrency": 40,
+  "keys": 40,
+  "read_count": 261,
+  "write_count": 2239,
+  "writes_201": 2239,
+  "stale_reads": 0,
+  "stale_rate_reads": 0.0
+}

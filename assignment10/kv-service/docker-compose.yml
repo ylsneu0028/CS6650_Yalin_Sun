@@ -1,0 +1,74 @@
+# N=5 Leader–Follower: 1 leader + 4 followers.
+# Default: W=5, R=1. Edit x-kv-base KV_R / KV_W for W=1 R=5 or R=3 W=3.
+# Writes → http://localhost:8080 (leader). Reads (R=1) can use any node if KV_LEADER_URL is set.
+
+x-kv-cluster: &kv_cluster
+  build: ./src
+  networks: [kvnet]
+
+x-kv-base: &kv_base
+  KV_N: "5"
+  KV_ALL_URLS: "http://leader:8080,http://follower-1:8080,http://follower-2:8080,http://follower-3:8080,http://follower-4:8080"
+  KV_R: "3"
+  KV_W: "3"
+
+networks:
+  kvnet: {}
+
+services:
+  # Host ports 18081–18084 so loadtest.py on your Mac can hit followers (local_read).
+  follower-1:
+    <<: *kv_cluster
+    ports:
+      - "18081:8080"
+    environment:
+      <<: *kv_base
+      KV_ROLE: follower
+      PORT: "8080"
+      KV_SELF_URL: http://follower-1:8080
+      KV_LEADER_URL: http://leader:8080
+  follower-2:
+    <<: *kv_cluster
+    ports:
+      - "18082:8080"
+    environment:
+      <<: *kv_base
+      KV_ROLE: follower
+      PORT: "8080"
+      KV_SELF_URL: http://follower-2:8080
+      KV_LEADER_URL: http://leader:8080
+  follower-3:
+    <<: *kv_cluster
+    ports:
+      - "18083:8080"
+    environment:
+      <<: *kv_base
+      KV_ROLE: follower
+      PORT: "8080"
+      KV_SELF_URL: http://follower-3:8080
+      KV_LEADER_URL: http://leader:8080
+  follower-4:
+    <<: *kv_cluster
+    ports:
+      - "18084:8080"
+    environment:
+      <<: *kv_base
+      KV_ROLE: follower
+      PORT: "8080"
+      KV_SELF_URL: http://follower-4:8080
+      KV_LEADER_URL: http://leader:8080
+  leader:
+    <<: *kv_cluster
+    ports:
+      - "8080:8080"
+    environment:
+      <<: *kv_base
+      KV_ROLE: leader
+      PORT: "8080"
+      KV_SELF_URL: http://leader:8080
+      KV_PEER_URLS: http://follower-1:8080,http://follower-2:8080,http://follower-3:8080,http://follower-4:8080
+    depends_on:
+      - follower-1
+      - follower-2
+      - follower-3
+      - follower-4

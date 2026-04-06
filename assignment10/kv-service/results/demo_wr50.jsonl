@@ -1,0 +1,500 @@
+{"op": "read", "read_path": "local_read", "latency_ms": 24.29041700088419, "key": "k2", "status": 200, "version": 115, "stale": false, "delta_ms": null, "seq": 2, "ts": 1775451893.988539}
+{"op": "read", "read_path": "local_read", "latency_ms": 26.818459009518847, "key": "k0", "status": 200, "version": 240, "stale": false, "delta_ms": null, "seq": 6, "ts": 1775451893.9917471}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.827167002717033, "key": "k25", "status": 200, "version": 237, "stale": false, "delta_ms": null, "seq": 14, "ts": 1775451893.9920099}
+{"op": "read", "read_path": "local_read", "latency_ms": 26.63758400012739, "key": "k38", "status": 200, "version": 175, "stale": false, "delta_ms": null, "seq": 10, "ts": 1775451893.992203}
+{"op": "read", "read_path": "local_read", "latency_ms": 28.39595900150016, "key": "k38", "status": 200, "version": 175, "stale": false, "delta_ms": null, "seq": 1, "ts": 1775451893.9923909}
+{"op": "read", "read_path": "local_read", "latency_ms": 26.716416992712766, "key": "k35", "status": 200, "version": 223, "stale": false, "delta_ms": null, "seq": 12, "ts": 1775451893.992624}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.13791700080037, "key": "k2", "status": 200, "version": 115, "stale": false, "delta_ms": null, "seq": 11, "ts": 1775451893.992851}
+{"op": "read", "read_path": "local_read", "latency_ms": 29.20020802412182, "key": "k39", "status": 200, "version": 235, "stale": false, "delta_ms": null, "seq": 3, "ts": 1775451893.993639}
+{"op": "read", "read_path": "local_read", "latency_ms": 28.587832988705486, "key": "k16", "status": 200, "version": 231, "stale": false, "delta_ms": null, "seq": 7, "ts": 1775451893.9936798}
+{"op": "read", "read_path": "local_read", "latency_ms": 30.887957982486114, "key": "k14", "status": 200, "version": 242, "stale": false, "delta_ms": null, "seq": 18, "ts": 1775451893.997622}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.277042015222833, "key": "k23", "status": 200, "version": 176, "stale": false, "delta_ms": null, "seq": 25, "ts": 1775451894.000476}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.932874995982274, "key": "k23", "status": 200, "version": 176, "stale": false, "delta_ms": null, "seq": 21, "ts": 1775451894.000631}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.224750006571412, "key": "k13", "status": 200, "version": 165, "stale": false, "delta_ms": null, "seq": 24, "ts": 1775451894.002034}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.703000010224059, "key": "k6", "status": 200, "version": 178, "stale": false, "delta_ms": null, "seq": 23, "ts": 1775451894.002151}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.680500015150756, "key": "k17", "status": 200, "version": 215, "stale": false, "delta_ms": null, "seq": 20, "ts": 1775451894.004302}
+{"op": "read", "read_path": "local_read", "latency_ms": 11.57745800446719, "key": "k29", "status": 200, "version": 228, "stale": false, "delta_ms": null, "seq": 26, "ts": 1775451894.0070999}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.898583011003211, "key": "k20", "status": 200, "version": 219, "stale": false, "delta_ms": null, "seq": 33, "ts": 1775451894.008669}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.364417000440881, "key": "k1", "status": 200, "version": 241, "stale": false, "delta_ms": null, "seq": 32, "ts": 1775451894.0088398}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.94720901385881, "key": "k24", "status": 200, "version": 129, "stale": false, "delta_ms": null, "seq": 35, "ts": 1775451894.0111911}
+{"op": "write", "latency_ms": 1234.3737079936545, "key": "k28", "status": 201, "version": 257, "stale": false, "delta_ms": null, "seq": 28, "ts": 1775451895.230748}
+{"op": "write", "latency_ms": 1269.477707974147, "key": "k5", "status": 201, "version": 250, "stale": false, "delta_ms": null, "seq": 4, "ts": 1775451895.2341068}
+{"op": "write", "latency_ms": 1239.7049170103855, "key": "k0", "status": 201, "version": 256, "stale": false, "delta_ms": null, "seq": 27, "ts": 1775451895.2355368}
+{"op": "write", "latency_ms": 1269.890083000064, "key": "k37", "status": 201, "version": 247, "stale": false, "delta_ms": null, "seq": 13, "ts": 1775451895.235946}
+{"op": "write", "latency_ms": 1231.7334580002353, "key": "k17", "status": 201, "version": 261, "stale": false, "delta_ms": null, "seq": 34, "ts": 1775451895.236371}
+{"op": "write", "latency_ms": 1270.2831659989897, "key": "k39", "status": 201, "version": 254, "stale": false, "delta_ms": null, "seq": 17, "ts": 1775451895.2368839}
+{"op": "write", "latency_ms": 1272.5598340039141, "key": "k0", "status": 201, "version": 246, "stale": false, "delta_ms": null, "seq": 5, "ts": 1775451895.237361}
+{"op": "write", "latency_ms": 1228.6041250044946, "key": "k5", "status": 201, "version": 263, "stale": false, "delta_ms": null, "seq": 37, "ts": 1775451895.237841}
+{"op": "write", "latency_ms": 1279.3333750159945, "key": "k38", "status": 201, "version": 253, "stale": false, "delta_ms": null, "seq": 0, "ts": 1775451895.238341}
+{"op": "write", "latency_ms": 1282.9366660153028, "key": "k19", "status": 201, "version": 245, "stale": false, "delta_ms": null, "seq": 15, "ts": 1775451895.2492642}
+{"op": "write", "latency_ms": 1238.4342910081614, "key": "k17", "status": 201, "version": 264, "stale": false, "delta_ms": null, "seq": 38, "ts": 1775451895.2497122}
+{"op": "write", "latency_ms": 1249.543874990195, "key": "k25", "status": 201, "version": 259, "stale": false, "delta_ms": null, "seq": 30, "ts": 1775451895.250187}
+{"op": "write", "latency_ms": 1256.6136249806732, "key": "k4", "status": 201, "version": 255, "stale": false, "delta_ms": null, "seq": 22, "ts": 1775451895.250696}
+{"op": "write", "latency_ms": 1284.3436249822844, "key": "k16", "status": 201, "version": 252, "stale": false, "delta_ms": null, "seq": 19, "ts": 1775451895.251227}
+{"op": "write", "latency_ms": 1250.5519590049516, "key": "k20", "status": 201, "version": 260, "stale": false, "delta_ms": null, "seq": 31, "ts": 1775451895.251775}
+{"op": "write", "latency_ms": 1285.8950829831883, "key": "k22", "status": 201, "version": 249, "stale": false, "delta_ms": null, "seq": 16, "ts": 1775451895.252353}
+{"op": "write", "latency_ms": 1254.7841249906924, "key": "k29", "status": 201, "version": 258, "stale": false, "delta_ms": null, "seq": 29, "ts": 1775451895.253099}
+{"op": "write", "latency_ms": 1288.4924590180162, "key": "k33", "status": 201, "version": 248, "stale": false, "delta_ms": null, "seq": 8, "ts": 1775451895.25378}
+{"op": "write", "latency_ms": 1245.5942499800585, "key": "k15", "status": 201, "version": 262, "stale": false, "delta_ms": null, "seq": 36, "ts": 1775451895.2544472}
+{"op": "write", "latency_ms": 1289.6371249807999, "key": "k10", "status": 201, "version": 251, "stale": false, "delta_ms": null, "seq": 9, "ts": 1775451895.2550662}
+{"op": "read", "read_path": "local_read", "latency_ms": 36.256083025364205, "key": "k11", "status": 200, "version": 209, "stale": false, "delta_ms": null, "seq": 39, "ts": 1775451895.2704399}
+{"op": "read", "read_path": "local_read", "latency_ms": 40.55274999700487, "key": "k37", "status": 200, "version": 247, "stale": false, "delta_ms": 11.042541009373963, "seq": 46, "ts": 1775451895.287552}
+{"op": "read", "read_path": "local_read", "latency_ms": 31.200625002384186, "key": "k35", "status": 200, "version": 223, "stale": false, "delta_ms": null, "seq": 52, "ts": 1775451895.28965}
+{"op": "read", "read_path": "local_read", "latency_ms": 46.29229102283716, "key": "k30", "status": 200, "version": 216, "stale": false, "delta_ms": null, "seq": 41, "ts": 1775451895.2899032}
+{"op": "read", "read_path": "local_read", "latency_ms": 34.15775002213195, "key": "k8", "status": 200, "version": 243, "stale": false, "delta_ms": null, "seq": 49, "ts": 1775451895.290164}
+{"op": "read", "read_path": "local_read", "latency_ms": 31.231792003381997, "key": "k17", "status": 200, "version": 264, "stale": false, "delta_ms": 9.483583009568974, "seq": 53, "ts": 1775451895.290431}
+{"op": "read", "read_path": "local_read", "latency_ms": 30.09704200667329, "key": "k34", "status": 200, "version": 234, "stale": false, "delta_ms": null, "seq": 55, "ts": 1775451895.29073}
+{"op": "read", "read_path": "local_read", "latency_ms": 33.39012499782257, "key": "k25", "status": 200, "version": 259, "stale": false, "delta_ms": 7.442499976605177, "seq": 51, "ts": 1775451895.291023}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.441042001824826, "key": "k33", "status": 200, "version": 248, "stale": false, "delta_ms": 38.483374984934926, "seq": 62, "ts": 1775451895.298709}
+{"op": "read", "read_path": "local_read", "latency_ms": 8.985874999780208, "key": "k38", "status": 200, "version": 253, "stale": false, "delta_ms": 54.366208001738414, "seq": 63, "ts": 1775451895.301701}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.837082997662947, "key": "k37", "status": 200, "version": 247, "stale": false, "delta_ms": 63.36533301509917, "seq": 67, "ts": 1775451895.306156}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.170542003819719, "key": "k31", "status": 200, "version": 229, "stale": false, "delta_ms": null, "seq": 69, "ts": 1775451895.3075058}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.992999998852611, "key": "k11", "status": 200, "version": 209, "stale": false, "delta_ms": null, "seq": 68, "ts": 1775451895.30817}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.12004198692739, "key": "k20", "status": 200, "version": 260, "stale": false, "delta_ms": 55.75158301508054, "seq": 70, "ts": 1775451895.309653}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.099708013702184, "key": "k17", "status": 200, "version": 264, "stale": false, "delta_ms": 58.478582999669015, "seq": 71, "ts": 1775451895.3102982}
+{"op": "write", "latency_ms": 1252.0090000180062, "key": "k36", "status": 201, "version": 267, "stale": false, "delta_ms": null, "seq": 58, "ts": 1775451896.514574}
+{"op": "write", "latency_ms": 1269.3579159968067, "key": "k10", "status": 201, "version": 271, "stale": false, "delta_ms": null, "seq": 44, "ts": 1775451896.515062}
+{"op": "write", "latency_ms": 1271.119415992871, "key": "k32", "status": 201, "version": 266, "stale": false, "delta_ms": null, "seq": 42, "ts": 1775451896.5154848}
+{"op": "write", "latency_ms": 1259.079292009119, "key": "k19", "status": 201, "version": 270, "stale": false, "delta_ms": null, "seq": 50, "ts": 1775451896.515923}
+{"op": "write", "latency_ms": 1271.4010409836192, "key": "k19", "status": 201, "version": 265, "stale": false, "delta_ms": null, "seq": 43, "ts": 1775451896.5164511}
+{"op": "write", "latency_ms": 1275.0549170013983, "key": "k13", "status": 201, "version": 272, "stale": false, "delta_ms": null, "seq": 40, "ts": 1775451896.5177128}
+{"op": "write", "latency_ms": 1274.9749999784399, "key": "k30", "status": 201, "version": 269, "stale": false, "delta_ms": null, "seq": 47, "ts": 1775451896.522687}
+{"op": "write", "latency_ms": 1253.3160420134664, "key": "k39", "status": 201, "version": 268, "stale": false, "delta_ms": null, "seq": 59, "ts": 1775451896.525496}
+{"op": "write", "latency_ms": 1280.9168749954551, "key": "k9", "status": 201, "version": 275, "stale": false, "delta_ms": null, "seq": 45, "ts": 1775451896.5272698}
+{"op": "write", "latency_ms": 1267.7604170166887, "key": "k38", "status": 201, "version": 274, "stale": false, "delta_ms": null, "seq": 54, "ts": 1775451896.5276911}
+{"op": "write", "latency_ms": 1267.8895839781035, "key": "k29", "status": 201, "version": 273, "stale": false, "delta_ms": null, "seq": 56, "ts": 1775451896.529239}
+{"op": "write", "latency_ms": 1238.1959169870242, "key": "k27", "status": 201, "version": 276, "stale": false, "delta_ms": null, "seq": 64, "ts": 1775451896.531332}
+{"op": "write", "latency_ms": 1274.9015830049757, "key": "k27", "status": 201, "version": 281, "stale": false, "delta_ms": null, "seq": 57, "ts": 1775451896.536882}
+{"op": "write", "latency_ms": 1245.4256249766331, "key": "k18", "status": 201, "version": 280, "stale": false, "delta_ms": null, "seq": 61, "ts": 1775451896.537177}
+{"op": "write", "latency_ms": 1243.565957993269, "key": "k22", "status": 201, "version": 282, "stale": false, "delta_ms": null, "seq": 66, "ts": 1775451896.5374908}
+{"op": "write", "latency_ms": 1282.592957984889, "key": "k17", "status": 201, "version": 277, "stale": false, "delta_ms": null, "seq": 48, "ts": 1775451896.537825}
+{"op": "write", "latency_ms": 1244.6483329986222, "key": "k22", "status": 201, "version": 279, "stale": false, "delta_ms": null, "seq": 65, "ts": 1775451896.538185}
+{"op": "write", "latency_ms": 1228.2470840145834, "key": "k3", "status": 201, "version": 284, "stale": false, "delta_ms": null, "seq": 73, "ts": 1775451896.538573}
+{"op": "write", "latency_ms": 1229.3110419996083, "key": "k9", "status": 201, "version": 283, "stale": false, "delta_ms": null, "seq": 72, "ts": 1775451896.5390038}
+{"op": "write", "latency_ms": 1250.7333340181503, "key": "k16", "status": 201, "version": 278, "stale": false, "delta_ms": null, "seq": 60, "ts": 1775451896.53983}
+{"op": "read", "read_path": "local_read", "latency_ms": 28.031333000399172, "key": "k22", "status": 200, "version": 282, "stale": false, "delta_ms": 1266.6266250016633, "seq": 75, "ts": 1775451896.54703}
+{"op": "read", "read_path": "local_read", "latency_ms": 34.61737500037998, "key": "k4", "status": 200, "version": 255, "stale": false, "delta_ms": 1270.4770840064157, "seq": 78, "ts": 1775451896.5558012}
+{"op": "read", "read_path": "local_read", "latency_ms": 36.301457992522046, "key": "k32", "status": 200, "version": 266, "stale": false, "delta_ms": 4.23970801057294, "seq": 76, "ts": 1775451896.55603}
+{"op": "read", "read_path": "local_read", "latency_ms": 33.80249999463558, "key": "k13", "status": 200, "version": 272, "stale": false, "delta_ms": 6.534500018460676, "seq": 79, "ts": 1775451896.558055}
+{"op": "read", "read_path": "local_read", "latency_ms": 41.55049999826588, "key": "k23", "status": 200, "version": 176, "stale": false, "delta_ms": null, "seq": 74, "ts": 1775451896.5593169}
+{"op": "read", "read_path": "local_read", "latency_ms": 34.34804198332131, "key": "k4", "status": 200, "version": 255, "stale": false, "delta_ms": 1274.8231250152458, "seq": 80, "ts": 1775451896.559873}
+{"op": "read", "read_path": "local_read", "latency_ms": 30.836249992717057, "key": "k27", "status": 200, "version": 281, "stale": false, "delta_ms": null, "seq": 82, "ts": 1775451896.560102}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.433999994769692, "key": "k32", "status": 200, "version": 266, "stale": false, "delta_ms": 25.06458302377723, "seq": 87, "ts": 1775451896.5619898}
+{"op": "read", "read_path": "local_read", "latency_ms": 23.108124994905666, "key": "k15", "status": 200, "version": 262, "stale": false, "delta_ms": 1286.7645829974208, "seq": 88, "ts": 1775451896.5643258}
+{"op": "read", "read_path": "local_read", "latency_ms": 22.19150000018999, "key": "k30", "status": 200, "version": 269, "stale": false, "delta_ms": 19.700458011357114, "seq": 90, "ts": 1775451896.564578}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.92437500343658, "key": "k16", "status": 200, "version": 278, "stale": false, "delta_ms": 3.090665995841846, "seq": 91, "ts": 1775451896.564849}
+{"op": "read", "read_path": "local_read", "latency_ms": 23.32283297437243, "key": "k5", "status": 200, "version": 263, "stale": false, "delta_ms": 1303.9705000119284, "seq": 89, "ts": 1775451896.565136}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.690291992854327, "key": "k6", "status": 200, "version": 178, "stale": false, "delta_ms": null, "seq": 93, "ts": 1775451896.5660732}
+{"op": "read", "read_path": "local_read", "latency_ms": 10.179667006013915, "key": "k34", "status": 200, "version": 234, "stale": false, "delta_ms": null, "seq": 98, "ts": 1775451896.570859}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.250374979572371, "key": "k0", "status": 200, "version": 256, "stale": false, "delta_ms": 1329.1445830254816, "seq": 103, "ts": 1775451896.5727339}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.373542010318488, "key": "k1", "status": 200, "version": 241, "stale": false, "delta_ms": null, "seq": 95, "ts": 1775451896.574296}
+{"op": "read", "read_path": "local_read", "latency_ms": 12.469916982809082, "key": "k12", "status": 200, "version": 236, "stale": false, "delta_ms": null, "seq": 101, "ts": 1775451896.574614}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.6026670024730265, "key": "k7", "status": 200, "version": 207, "stale": false, "delta_ms": null, "seq": 107, "ts": 1775451896.575916}
+{"op": "read", "read_path": "local_read", "latency_ms": 18.9795000187587, "key": "k17", "status": 200, "version": 277, "stale": false, "delta_ms": 19.487874989863485, "seq": 96, "ts": 1775451896.576297}
+{"op": "read", "read_path": "local_read", "latency_ms": 11.760374996811152, "key": "k9", "status": 200, "version": 283, "stale": false, "delta_ms": 28.233958000782877, "seq": 105, "ts": 1775451896.5790029}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.505000000586733, "key": "k39", "status": 200, "version": 268, "stale": false, "delta_ms": 50.814167014323175, "seq": 111, "ts": 1775451896.57982}
+{"op": "write", "latency_ms": 1237.3910000023898, "key": "k0", "status": 201, "version": 288, "stale": false, "delta_ms": null, "seq": 86, "ts": 1775451897.77728}
+{"op": "write", "latency_ms": 1247.7624170132913, "key": "k31", "status": 201, "version": 286, "stale": false, "delta_ms": null, "seq": 83, "ts": 1775451897.777704}
+{"op": "write", "latency_ms": 1245.1771250052843, "key": "k23", "status": 201, "version": 287, "stale": false, "delta_ms": null, "seq": 85, "ts": 1775451897.7778869}
+{"op": "write", "latency_ms": 1249.6958750125486, "key": "k12", "status": 201, "version": 285, "stale": false, "delta_ms": null, "seq": 81, "ts": 1775451897.7780511}
+{"op": "write", "latency_ms": 1246.114833978936, "key": "k27", "status": 201, "version": 289, "stale": false, "delta_ms": null, "seq": 84, "ts": 1775451897.778226}
+{"op": "write", "latency_ms": 1237.8095419844612, "key": "k1", "status": 201, "version": 290, "stale": false, "delta_ms": null, "seq": 92, "ts": 1775451897.7812328}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.00725002004765, "key": "k14", "status": 200, "version": 242, "stale": false, "delta_ms": null, "seq": 119, "ts": 1775451897.785588}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.023417012533173, "key": "k31", "status": 200, "version": 286, "stale": false, "delta_ms": 0.9042079909704626, "seq": 116, "ts": 1775451897.7856371}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.355417000828311, "key": "k1", "status": 200, "version": 290, "stale": false, "delta_ms": 0.152374996105209, "seq": 120, "ts": 1775451897.786752}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.679499982856214, "key": "k6", "status": 200, "version": 291, "stale": false, "delta_ms": null, "seq": 123, "ts": 1775451897.788532}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.152582998154685, "key": "k38", "status": 200, "version": 274, "stale": false, "delta_ms": 1258.4650419885293, "seq": 122, "ts": 1775451897.789313}
+{"op": "write", "latency_ms": 1215.001917007612, "key": "k18", "status": 201, "version": 301, "stale": false, "delta_ms": null, "seq": 110, "ts": 1775451897.790398}
+{"op": "write", "latency_ms": 1223.8096669898368, "key": "k15", "status": 201, "version": 293, "stale": false, "delta_ms": null, "seq": 104, "ts": 1775451897.790671}
+{"op": "write", "latency_ms": 1234.2675410036463, "key": "k23", "status": 201, "version": 292, "stale": false, "delta_ms": null, "seq": 97, "ts": 1775451897.793599}
+{"op": "write", "latency_ms": 1245.7005420001224, "key": "k6", "status": 201, "version": 291, "stale": false, "delta_ms": null, "seq": 94, "ts": 1775451897.7942011}
+{"op": "write", "latency_ms": 1226.4786250016186, "key": "k19", "status": 201, "version": 296, "stale": false, "delta_ms": null, "seq": 106, "ts": 1775451897.794446}
+{"op": "write", "latency_ms": 1274.192083015805, "key": "k23", "status": 201, "version": 295, "stale": false, "delta_ms": null, "seq": 77, "ts": 1775451897.794711}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.759040988981724, "key": "k21", "status": 200, "version": 230, "stale": false, "delta_ms": null, "seq": 124, "ts": 1775451897.7953339}
+{"op": "write", "latency_ms": 1229.5682080148254, "key": "k20", "status": 201, "version": 294, "stale": false, "delta_ms": null, "seq": 102, "ts": 1775451897.795659}
+{"op": "write", "latency_ms": 1234.5057920028921, "key": "k25", "status": 201, "version": 298, "stale": false, "delta_ms": null, "seq": 100, "ts": 1775451897.7959318}
+{"op": "write", "latency_ms": 1235.1647080213297, "key": "k36", "status": 201, "version": 297, "stale": false, "delta_ms": null, "seq": 99, "ts": 1775451897.796247}
+{"op": "write", "latency_ms": 1223.6554579867516, "key": "k3", "status": 201, "version": 299, "stale": false, "delta_ms": null, "seq": 108, "ts": 1775451897.7965581}
+{"op": "write", "latency_ms": 1222.604084003251, "key": "k29", "status": 201, "version": 300, "stale": false, "delta_ms": null, "seq": 109, "ts": 1775451897.797251}
+{"op": "write", "latency_ms": 1223.7180410011206, "key": "k17", "status": 201, "version": 303, "stale": false, "delta_ms": null, "seq": 113, "ts": 1775451897.8027651}
+{"op": "write", "latency_ms": 1223.2422909874003, "key": "k28", "status": 201, "version": 304, "stale": false, "delta_ms": null, "seq": 114, "ts": 1775451897.8031192}
+{"op": "write", "latency_ms": 1226.8477090110537, "key": "k32", "status": 201, "version": 302, "stale": false, "delta_ms": null, "seq": 112, "ts": 1775451897.803587}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.100833988981321, "key": "k7", "status": 200, "version": 207, "stale": false, "delta_ms": null, "seq": 129, "ts": 1775451897.812384}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.3772499959450215, "key": "k37", "status": 200, "version": 247, "stale": false, "delta_ms": 2576.9969999964815, "seq": 141, "ts": 1775451897.8183239}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.810499974293634, "key": "k29", "status": 200, "version": 300, "stale": false, "delta_ms": 1261.444792005932, "seq": 126, "ts": 1775451897.818497}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.50837497296743, "key": "k9", "status": 200, "version": 283, "stale": false, "delta_ms": 1254.1752080142032, "seq": 127, "ts": 1775451897.820696}
+{"op": "read", "read_path": "local_read", "latency_ms": 22.323083016090095, "key": "k6", "status": 200, "version": 291, "stale": false, "delta_ms": 4.34849999146536, "seq": 132, "ts": 1775451897.820877}
+{"op": "read", "read_path": "local_read", "latency_ms": 22.29200000874698, "key": "k3", "status": 200, "version": 299, "stale": false, "delta_ms": 3.575790993636474, "seq": 135, "ts": 1775451897.822433}
+{"op": "read", "read_path": "local_read", "latency_ms": 23.84287497261539, "key": "k26", "status": 200, "version": 197, "stale": false, "delta_ms": null, "seq": 133, "ts": 1775451897.822886}
+{"op": "write", "latency_ms": 1242.5869170110673, "key": "k29", "status": 201, "version": 308, "stale": false, "delta_ms": null, "seq": 121, "ts": 1775451899.028248}
+{"op": "write", "latency_ms": 1250.2370000001974, "key": "k7", "status": 201, "version": 307, "stale": false, "delta_ms": null, "seq": 115, "ts": 1775451899.028501}
+{"op": "write", "latency_ms": 1249.8028749832883, "key": "k25", "status": 201, "version": 306, "stale": false, "delta_ms": null, "seq": 117, "ts": 1775451899.028772}
+{"op": "write", "latency_ms": 1249.777917022584, "key": "k27", "status": 201, "version": 305, "stale": false, "delta_ms": null, "seq": 118, "ts": 1775451899.029034}
+{"op": "write", "latency_ms": 1232.982457993785, "key": "k3", "status": 201, "version": 309, "stale": false, "delta_ms": null, "seq": 134, "ts": 1775451899.0326788}
+{"op": "write", "latency_ms": 1240.2682499960065, "key": "k20", "status": 201, "version": 315, "stale": false, "delta_ms": null, "seq": 128, "ts": 1775451899.036991}
+{"op": "write", "latency_ms": 1236.6030419943854, "key": "k10", "status": 201, "version": 312, "stale": false, "delta_ms": null, "seq": 136, "ts": 1775451899.037185}
+{"op": "write", "latency_ms": 1248.0575419904198, "key": "k9", "status": 201, "version": 311, "stale": false, "delta_ms": null, "seq": 125, "ts": 1775451899.0374012}
+{"op": "write", "latency_ms": 1233.1641660130117, "key": "k23", "status": 201, "version": 310, "stale": false, "delta_ms": null, "seq": 138, "ts": 1775451899.0376441}
+{"op": "write", "latency_ms": 1232.929374993546, "key": "k39", "status": 201, "version": 313, "stale": false, "delta_ms": null, "seq": 139, "ts": 1775451899.03791}
+{"op": "write", "latency_ms": 1236.4587079791818, "key": "k37", "status": 201, "version": 314, "stale": false, "delta_ms": null, "seq": 137, "ts": 1775451899.0380821}
+{"op": "write", "latency_ms": 1243.900165980449, "key": "k12", "status": 201, "version": 316, "stale": false, "delta_ms": null, "seq": 130, "ts": 1775451899.0416372}
+{"op": "write", "latency_ms": 1240.8840419957414, "key": "k20", "status": 201, "version": 318, "stale": false, "delta_ms": null, "seq": 140, "ts": 1775451899.0463219}
+{"op": "write", "latency_ms": 1223.6264999955893, "key": "k6", "status": 201, "version": 322, "stale": false, "delta_ms": null, "seq": 146, "ts": 1775451899.0465229}
+{"op": "write", "latency_ms": 1223.3505419862922, "key": "k19", "status": 201, "version": 324, "stale": false, "delta_ms": null, "seq": 147, "ts": 1775451899.046752}
+{"op": "write", "latency_ms": 1225.4577499988955, "key": "k38", "status": 201, "version": 321, "stale": false, "delta_ms": null, "seq": 144, "ts": 1775451899.0469902}
+{"op": "write", "latency_ms": 1228.2663329970092, "key": "k29", "status": 201, "version": 319, "stale": false, "delta_ms": null, "seq": 143, "ts": 1775451899.047275}
+{"op": "write", "latency_ms": 1228.8078750134446, "key": "k30", "status": 201, "version": 317, "stale": false, "delta_ms": null, "seq": 142, "ts": 1775451899.047565}
+{"op": "write", "latency_ms": 1226.034499995876, "key": "k33", "status": 201, "version": 320, "stale": false, "delta_ms": null, "seq": 145, "ts": 1775451899.0478668}
+{"op": "write", "latency_ms": 1250.3084579948336, "key": "k19", "status": 201, "version": 323, "stale": false, "delta_ms": null, "seq": 131, "ts": 1775451899.048458}
+{"op": "read", "read_path": "local_read", "latency_ms": 12.96379099949263, "key": "k10", "status": 200, "version": 312, "stale": false, "delta_ms": 3.6108750209677964, "seq": 158, "ts": 1775451899.053772}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.867958000162616, "key": "k19", "status": 200, "version": 324, "stale": false, "delta_ms": 1236.403707996942, "seq": 151, "ts": 1775451899.056725}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.882250025868416, "key": "k25", "status": 200, "version": 306, "stale": false, "delta_ms": 0.3262499812990427, "seq": 148, "ts": 1775451899.0569868}
+{"op": "read", "read_path": "local_read", "latency_ms": 26.64333299617283, "key": "k39", "status": 200, "version": 313, "stale": false, "delta_ms": 2507.5620420102496, "seq": 152, "ts": 1775451899.059704}
+{"op": "read", "read_path": "local_read", "latency_ms": 24.70599999651313, "key": "k33", "status": 200, "version": 320, "stale": false, "delta_ms": 3784.321833983995, "seq": 153, "ts": 1775451899.0628119}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.489791994914412, "key": "k9", "status": 200, "version": 311, "stale": false, "delta_ms": 1.787624991266057, "seq": 155, "ts": 1775451899.064685}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.654041004600003, "key": "k9", "status": 200, "version": 311, "stale": false, "delta_ms": 4.490916995564476, "seq": 159, "ts": 1775451899.067553}
+{"op": "read", "read_path": "local_read", "latency_ms": 18.541666999226436, "key": "k12", "status": 200, "version": 316, "stale": false, "delta_ms": 8.868292003171518, "seq": 165, "ts": 1775451899.069053}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.893666001735255, "key": "k15", "status": 200, "version": 293, "stale": false, "delta_ms": 1258.6184590181801, "seq": 162, "ts": 1775451899.069186}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.954166018171236, "key": "k14", "status": 200, "version": 242, "stale": false, "delta_ms": null, "seq": 167, "ts": 1775451899.069726}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.002500002272427, "key": "k13", "status": 200, "version": 272, "stale": false, "delta_ms": 2545.6561669998337, "seq": 172, "ts": 1775451899.070373}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.695167006924748, "key": "k16", "status": 200, "version": 278, "stale": false, "delta_ms": 2514.996665995568, "seq": 168, "ts": 1775451899.070524}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.199499990558252, "key": "k13", "status": 200, "version": 272, "stale": false, "delta_ms": 2539.989709010115, "seq": 169, "ts": 1775451899.072905}
+{"op": "read", "read_path": "local_read", "latency_ms": 14.977583981817588, "key": "k34", "status": 200, "version": 234, "stale": false, "delta_ms": null, "seq": 170, "ts": 1775451899.0730839}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.327582988888025, "key": "k27", "status": 200, "version": 305, "stale": false, "delta_ms": 40.970041998662055, "seq": 176, "ts": 1775451899.0763369}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.874084010021761, "key": "k35", "status": 200, "version": 223, "stale": false, "delta_ms": null, "seq": 181, "ts": 1775451899.077445}
+{"op": "read", "read_path": "local_read", "latency_ms": 8.210542000597343, "key": "k5", "status": 200, "version": 263, "stale": false, "delta_ms": 3832.8146249987185, "seq": 177, "ts": 1775451899.078869}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.993917010026053, "key": "k21", "status": 200, "version": 230, "stale": false, "delta_ms": null, "seq": 178, "ts": 1775451899.0790231}
+{"op": "read", "read_path": "local_read", "latency_ms": 10.686083987820894, "key": "k32", "status": 200, "version": 302, "stale": false, "delta_ms": 1264.822750003077, "seq": 174, "ts": 1775451899.079099}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.023374989628792, "key": "k30", "status": 200, "version": 317, "stale": false, "delta_ms": 28.88862500549294, "seq": 182, "ts": 1775451899.0804842}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.0735830154735595, "key": "k31", "status": 200, "version": 286, "stale": false, "delta_ms": 1299.8553329962306, "seq": 183, "ts": 1775451899.0826392}
+{"op": "write", "latency_ms": 1238.352374988608, "key": "k38", "status": 201, "version": 325, "stale": false, "delta_ms": null, "seq": 150, "ts": 1775451900.268754}
+{"op": "write", "latency_ms": 1229.109583015088, "key": "k37", "status": 201, "version": 326, "stale": false, "delta_ms": null, "seq": 157, "ts": 1775451900.2691898}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.731417011702433, "key": "k6", "status": 200, "version": 334, "stale": false, "delta_ms": 1223.6910419887863, "seq": 190, "ts": 1775451900.275989}
+{"op": "write", "latency_ms": 1243.002166011138, "key": "k25", "status": 201, "version": 327, "stale": false, "delta_ms": null, "seq": 154, "ts": 1775451900.28175}
+{"op": "write", "latency_ms": 1242.4493330181576, "key": "k15", "status": 201, "version": 331, "stale": false, "delta_ms": null, "seq": 156, "ts": 1775451900.282105}
+{"op": "write", "latency_ms": 1252.9346669907682, "key": "k23", "status": 201, "version": 329, "stale": false, "delta_ms": null, "seq": 149, "ts": 1775451900.282696}
+{"op": "write", "latency_ms": 1222.8541660006158, "key": "k12", "status": 201, "version": 332, "stale": false, "delta_ms": null, "seq": 171, "ts": 1775451900.283303}
+{"op": "write", "latency_ms": 1235.3023329924326, "key": "k16", "status": 201, "version": 330, "stale": false, "delta_ms": null, "seq": 160, "ts": 1775451900.283786}
+{"op": "write", "latency_ms": 1233.073459006846, "key": "k6", "status": 201, "version": 328, "stale": false, "delta_ms": null, "seq": 166, "ts": 1775451900.284009}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.95570899453014, "key": "k16", "status": 200, "version": 330, "stale": false, "delta_ms": 3736.232541006757, "seq": 191, "ts": 1775451900.2960398}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.694125008536503, "key": "k23", "status": 200, "version": 342, "stale": false, "delta_ms": 5.12812499073334, "seq": 197, "ts": 1775451900.297527}
+{"op": "read", "read_path": "local_read", "latency_ms": 13.729209022130817, "key": "k15", "status": 200, "version": 337, "stale": false, "delta_ms": 1.9421250035520643, "seq": 192, "ts": 1775451900.297784}
+{"op": "write", "latency_ms": 1252.2825000050943, "key": "k39", "status": 201, "version": 335, "stale": false, "delta_ms": null, "seq": 163, "ts": 1775451900.30203}
+{"op": "write", "latency_ms": 1222.3988749901764, "key": "k24", "status": 201, "version": 341, "stale": false, "delta_ms": null, "seq": 186, "ts": 1775451900.3022258}
+{"op": "write", "latency_ms": 1231.0306669969577, "key": "k1", "status": 201, "version": 338, "stale": false, "delta_ms": null, "seq": 179, "ts": 1775451900.3024352}
+{"op": "write", "latency_ms": 1237.2067499964032, "key": "k2", "status": 201, "version": 336, "stale": false, "delta_ms": null, "seq": 173, "ts": 1775451900.302675}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.29737498681061, "key": "k37", "status": 200, "version": 326, "stale": false, "delta_ms": 16.44879099330865, "seq": 194, "ts": 1775451900.3029408}
+{"op": "write", "latency_ms": 1229.9521670211107, "key": "k9", "status": 201, "version": 339, "stale": false, "delta_ms": null, "seq": 180, "ts": 1775451900.303226}
+{"op": "write", "latency_ms": 1224.4200000131968, "key": "k0", "status": 201, "version": 340, "stale": false, "delta_ms": null, "seq": 184, "ts": 1775451900.303531}
+{"op": "read", "read_path": "local_read", "latency_ms": 16.75637500011362, "key": "k29", "status": 200, "version": 319, "stale": false, "delta_ms": 1239.819542010082, "seq": 196, "ts": 1775451900.3038568}
+{"op": "write", "latency_ms": 1255.2814579976257, "key": "k35", "status": 201, "version": 333, "stale": false, "delta_ms": null, "seq": 161, "ts": 1775451900.304176}
+{"op": "write", "latency_ms": 1225.12270801235, "key": "k23", "status": 201, "version": 342, "stale": false, "delta_ms": null, "seq": 185, "ts": 1775451900.304519}
+{"op": "write", "latency_ms": 1235.1378749881405, "key": "k15", "status": 201, "version": 337, "stale": false, "delta_ms": null, "seq": 175, "ts": 1775451900.304873}
+{"op": "write", "latency_ms": 1255.1185420015827, "key": "k6", "status": 201, "version": 334, "stale": false, "delta_ms": null, "seq": 164, "ts": 1775451900.305262}
+{"op": "write", "latency_ms": 1224.8480830166955, "key": "k1", "status": 201, "version": 343, "stale": false, "delta_ms": null, "seq": 187, "ts": 1775451900.305408}
+{"op": "write", "latency_ms": 1231.749165977817, "key": "k28", "status": 201, "version": 344, "stale": false, "delta_ms": null, "seq": 188, "ts": 1775451900.3145401}
+{"op": "read", "read_path": "local_read", "latency_ms": 13.231999997515231, "key": "k24", "status": 200, "version": 341, "stale": false, "delta_ms": 3.2894999894779176, "seq": 201, "ts": 1775451900.318756}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.4183330074884, "key": "k29", "status": 200, "version": 319, "stale": false, "delta_ms": 1264.0756250184495, "seq": 212, "ts": 1775451900.3207748}
+{"op": "read", "read_path": "local_read", "latency_ms": 16.276708018267527, "key": "k8", "status": 200, "version": 243, "stale": false, "delta_ms": null, "seq": 204, "ts": 1775451900.3234491}
+{"op": "read", "read_path": "local_read", "latency_ms": 28.426291974028572, "key": "k13", "status": 200, "version": 272, "stale": false, "delta_ms": 3778.402667026967, "seq": 198, "ts": 1775451900.324544}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.278832994634286, "key": "k0", "status": 200, "version": 340, "stale": false, "delta_ms": 7.2920420207083225, "seq": 211, "ts": 1775451900.328107}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.435791007708758, "key": "k17", "status": 200, "version": 303, "stale": false, "delta_ms": 2506.0443340044003, "seq": 207, "ts": 1775451900.328248}
+{"op": "read", "read_path": "local_read", "latency_ms": 16.255624999757856, "key": "k37", "status": 200, "version": 326, "stale": false, "delta_ms": 42.96333299134858, "seq": 213, "ts": 1775451900.328406}
+{"op": "read", "read_path": "local_read", "latency_ms": 20.800958009203896, "key": "k18", "status": 200, "version": 301, "stale": false, "delta_ms": 2517.3087919829413, "seq": 205, "ts": 1775451900.328511}
+{"op": "read", "read_path": "local_read", "latency_ms": 14.815792004810646, "key": "k28", "status": 200, "version": 344, "stale": false, "delta_ms": 1.547791005577892, "seq": 214, "ts": 1775451900.33091}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.29729200550355, "key": "k7", "status": 200, "version": 307, "stale": false, "delta_ms": 1300.0222500122618, "seq": 219, "ts": 1775451900.332823}
+{"op": "read", "read_path": "local_read", "latency_ms": 11.80395798292011, "key": "k12", "status": 200, "version": 332, "stale": false, "delta_ms": 37.960417015710846, "seq": 216, "ts": 1775451900.333069}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.566791009390727, "key": "k38", "status": 200, "version": 325, "stale": false, "delta_ms": 60.38391697802581, "seq": 221, "ts": 1775451900.335706}
+{"op": "write", "latency_ms": 1244.014583004173, "key": "k33", "status": 201, "version": 345, "stale": false, "delta_ms": null, "seq": 189, "ts": 1775451901.513304}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.1099580228328705, "key": "k27", "status": 200, "version": 305, "stale": false, "delta_ms": 2484.350833983626, "seq": 227, "ts": 1775451901.5165482}
+{"op": "write", "latency_ms": 1232.3497920006048, "key": "k33", "status": 201, "version": 346, "stale": false, "delta_ms": null, "seq": 195, "ts": 1775451901.518795}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.8405419909395278, "key": "k6", "status": 200, "version": 347, "stale": false, "delta_ms": 1213.7562500138301, "seq": 229, "ts": 1775451901.522892}
+{"op": "read", "read_path": "local_read", "latency_ms": 8.106291003059596, "key": "k16", "status": 200, "version": 330, "stale": false, "delta_ms": 1232.8497499984223, "seq": 228, "ts": 1775451901.5247612}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.373166990466416, "key": "k27", "status": 200, "version": 305, "stale": false, "delta_ms": 2495.7837499969173, "seq": 231, "ts": 1775451901.530217}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.1886659930460155, "key": "k35", "status": 200, "version": 333, "stale": false, "delta_ms": 1226.0960420244373, "seq": 232, "ts": 1775451901.5354822}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.9147080020047724, "key": "k39", "status": 200, "version": 335, "stale": false, "delta_ms": 1233.5037919983733, "seq": 233, "ts": 1775451901.5374699}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.935333021217957, "key": "k14", "status": 200, "version": 363, "stale": false, "delta_ms": null, "seq": 234, "ts": 1775451901.541482}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.8080839945469052, "key": "k7", "status": 200, "version": 349, "stale": false, "delta_ms": 2513.02808301989, "seq": 235, "ts": 1775451901.543348}
+{"op": "write", "latency_ms": 1228.762499988079, "key": "k20", "status": 201, "version": 351, "stale": false, "delta_ms": null, "seq": 215, "ts": 1775451901.5479832}
+{"op": "write", "latency_ms": 1221.502458996838, "key": "k36", "status": 201, "version": 359, "stale": false, "delta_ms": null, "seq": 220, "ts": 1775451901.5503318}
+{"op": "write", "latency_ms": 1240.6989999872167, "key": "k7", "status": 201, "version": 349, "stale": false, "delta_ms": null, "seq": 209, "ts": 1775451901.550585}
+{"op": "write", "latency_ms": 1240.5187920085154, "key": "k21", "status": 201, "version": 353, "stale": false, "delta_ms": null, "seq": 210, "ts": 1775451901.550876}
+{"op": "write", "latency_ms": 1220.9884999901988, "key": "k14", "status": 201, "version": 363, "stale": false, "delta_ms": null, "seq": 225, "ts": 1775451901.554476}
+{"op": "write", "latency_ms": 1247.0789169892669, "key": "k30", "status": 201, "version": 358, "stale": false, "delta_ms": null, "seq": 208, "ts": 1775451901.5564559}
+{"op": "write", "latency_ms": 1231.652499991469, "key": "k14", "status": 201, "version": 357, "stale": false, "delta_ms": null, "seq": 218, "ts": 1775451901.5567439}
+{"op": "write", "latency_ms": 1255.9194169880357, "key": "k20", "status": 201, "version": 352, "stale": false, "delta_ms": null, "seq": 200, "ts": 1775451901.5570781}
+{"op": "write", "latency_ms": 1259.6297500131186, "key": "k0", "status": 201, "version": 350, "stale": false, "delta_ms": null, "seq": 199, "ts": 1775451901.557431}
+{"op": "write", "latency_ms": 1222.0733750145882, "key": "k33", "status": 201, "version": 364, "stale": false, "delta_ms": null, "seq": 226, "ts": 1775451901.5578082}
+{"op": "write", "latency_ms": 1249.9687499948777, "key": "k10", "status": 201, "version": 356, "stale": false, "delta_ms": null, "seq": 206, "ts": 1775451901.558244}
+{"op": "write", "latency_ms": 1225.6017090112437, "key": "k37", "status": 201, "version": 362, "stale": false, "delta_ms": null, "seq": 224, "ts": 1775451901.558686}
+{"op": "write", "latency_ms": 1235.0502090121154, "key": "k19", "status": 201, "version": 354, "stale": false, "delta_ms": null, "seq": 217, "ts": 1775451901.5591412}
+{"op": "write", "latency_ms": 1274.6115410118364, "key": "k6", "status": 201, "version": 347, "stale": false, "delta_ms": null, "seq": 193, "ts": 1775451901.559568}
+{"op": "write", "latency_ms": 1230.4827909974847, "key": "k13", "status": 201, "version": 360, "stale": false, "delta_ms": null, "seq": 222, "ts": 1775451901.5600362}
+{"op": "write", "latency_ms": 1253.8730000087526, "key": "k29", "status": 201, "version": 355, "stale": false, "delta_ms": null, "seq": 203, "ts": 1775451901.56053}
+{"op": "write", "latency_ms": 1254.9451250233687, "key": "k29", "status": 201, "version": 348, "stale": false, "delta_ms": null, "seq": 202, "ts": 1775451901.561064}
+{"op": "write", "latency_ms": 1230.884458986111, "key": "k9", "status": 201, "version": 361, "stale": false, "delta_ms": null, "seq": 223, "ts": 1775451901.5618858}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.138541996246204, "key": "k26", "status": 200, "version": 197, "stale": false, "delta_ms": null, "seq": 241, "ts": 1775451901.578233}
+{"op": "read", "read_path": "local_read", "latency_ms": 34.93508399697021, "key": "k15", "status": 200, "version": 337, "stale": false, "delta_ms": 1250.5296660237946, "seq": 240, "ts": 1775451901.590346}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.13554198271595, "key": "k36", "status": 200, "version": 359, "stale": false, "delta_ms": 13.028040993958712, "seq": 244, "ts": 1775451901.5904992}
+{"op": "read", "read_path": "local_read", "latency_ms": 22.448042000178248, "key": "k6", "status": 200, "version": 347, "stale": false, "delta_ms": 9.123750001890585, "seq": 253, "ts": 1775451901.591145}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.504541990812868, "key": "k9", "status": 200, "version": 361, "stale": false, "delta_ms": 4.6692920150235295, "seq": 249, "ts": 1775451901.592066}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.417542005423456, "key": "k22", "status": 200, "version": 282, "stale": false, "delta_ms": 5026.6415829828475, "seq": 246, "ts": 1775451901.592246}
+{"op": "read", "read_path": "local_read", "latency_ms": 26.1659589887131, "key": "k26", "status": 200, "version": 197, "stale": false, "delta_ms": null, "seq": 250, "ts": 1775451901.5933208}
+{"op": "read", "read_path": "local_read", "latency_ms": 30.253667006036267, "key": "k39", "status": 200, "version": 335, "stale": false, "delta_ms": 1262.0795000111684, "seq": 245, "ts": 1775451901.594371}
+{"op": "read", "read_path": "local_read", "latency_ms": 13.805708003928885, "key": "k18", "status": 200, "version": 301, "stale": false, "delta_ms": 3790.373958996497, "seq": 255, "ts": 1775451901.594581}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.045374990440905, "key": "k2", "status": 200, "version": 336, "stale": false, "delta_ms": 1267.0754590071738, "seq": 254, "ts": 1775451901.5948029}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.90212497347966, "key": "k16", "status": 200, "version": 330, "stale": false, "delta_ms": 1283.9065410080366, "seq": 251, "ts": 1775451901.595598}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.76433298131451, "key": "k25", "status": 200, "version": 327, "stale": false, "delta_ms": 1314.978083013557, "seq": 265, "ts": 1775451901.599496}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.29174999287352, "key": "k25", "status": 200, "version": 327, "stale": false, "delta_ms": 1311.5862499980722, "seq": 259, "ts": 1775451901.60063}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.597083000699058, "key": "k0", "status": 200, "version": 350, "stale": false, "delta_ms": 33.7271669995971, "seq": 256, "ts": 1775451901.600758}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.857290991116315, "key": "k17", "status": 200, "version": 303, "stale": false, "delta_ms": 3793.4980840072967, "seq": 264, "ts": 1775451901.602124}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.841917001409456, "key": "k21", "status": 200, "version": 353, "stale": false, "delta_ms": 48.811832995852455, "seq": 266, "ts": 1775451901.603538}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.8376249936409295, "key": "k16", "status": 200, "version": 330, "stale": false, "delta_ms": 1318.7789999938104, "seq": 269, "ts": 1775451901.604407}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.669791989726946, "key": "k27", "status": 200, "version": 305, "stale": false, "delta_ms": 2572.102292004274, "seq": 267, "ts": 1775451901.6058109}
+{"op": "write", "latency_ms": 1257.5645839970093, "key": "k8", "status": 201, "version": 365, "stale": false, "delta_ms": null, "seq": 230, "ts": 1775451902.7805362}
+{"op": "write", "latency_ms": 1237.9323329951148, "key": "k0", "status": 201, "version": 366, "stale": false, "delta_ms": null, "seq": 236, "ts": 1775451902.781323}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.335207995027304, "key": "k37", "status": 200, "version": 362, "stale": false, "delta_ms": 1223.8641250005458, "seq": 273, "ts": 1775451902.8019998}
+{"op": "write", "latency_ms": 1286.954125011107, "key": "k19", "status": 201, "version": 372, "stale": false, "delta_ms": null, "seq": 248, "ts": 1775451902.852997}
+{"op": "write", "latency_ms": 1257.90950001101, "key": "k38", "status": 201, "version": 379, "stale": false, "delta_ms": null, "seq": 262, "ts": 1775451902.853526}
+{"op": "write", "latency_ms": 1247.8477080003358, "key": "k10", "status": 201, "version": 384, "stale": false, "delta_ms": null, "seq": 272, "ts": 1775451902.853743}
+{"op": "write", "latency_ms": 1292.140916979406, "key": "k0", "status": 201, "version": 371, "stale": false, "delta_ms": null, "seq": 242, "ts": 1775451902.854041}
+{"op": "write", "latency_ms": 1260.599374974845, "key": "k24", "status": 201, "version": 378, "stale": false, "delta_ms": null, "seq": 260, "ts": 1775451902.854238}
+{"op": "write", "latency_ms": 1305.0409579882398, "key": "k11", "status": 201, "version": 367, "stale": false, "delta_ms": null, "seq": 237, "ts": 1775451902.854433}
+{"op": "write", "latency_ms": 1263.2084590150043, "key": "k12", "status": 201, "version": 375, "stale": false, "delta_ms": null, "seq": 257, "ts": 1775451902.854646}
+{"op": "write", "latency_ms": 1258.9540829940233, "key": "k33", "status": 201, "version": 380, "stale": false, "delta_ms": null, "seq": 263, "ts": 1775451902.854895}
+{"op": "write", "latency_ms": 1289.6772920212243, "key": "k34", "status": 201, "version": 369, "stale": false, "delta_ms": null, "seq": 247, "ts": 1775451902.8551471}
+{"op": "write", "latency_ms": 1253.9795000047889, "key": "k13", "status": 201, "version": 381, "stale": false, "delta_ms": null, "seq": 268, "ts": 1775451902.8553972}
+{"op": "write", "latency_ms": 1301.134874986019, "key": "k26", "status": 201, "version": 374, "stale": false, "delta_ms": null, "seq": 238, "ts": 1775451902.855624}
+{"op": "write", "latency_ms": 1252.3656249977648, "key": "k0", "status": 201, "version": 382, "stale": false, "delta_ms": null, "seq": 270, "ts": 1775451902.855922}
+{"op": "write", "latency_ms": 1263.3123339910526, "key": "k35", "status": 201, "version": 376, "stale": false, "delta_ms": null, "seq": 258, "ts": 1775451902.856263}
+{"op": "write", "latency_ms": 1301.737832982326, "key": "k5", "status": 201, "version": 373, "stale": false, "delta_ms": null, "seq": 239, "ts": 1775451902.856682}
+{"op": "write", "latency_ms": 1252.428499981761, "key": "k38", "status": 201, "version": 383, "stale": false, "delta_ms": null, "seq": 271, "ts": 1775451902.8570392}
+{"op": "write", "latency_ms": 1294.7581670014188, "key": "k12", "status": 201, "version": 370, "stale": false, "delta_ms": null, "seq": 243, "ts": 1775451902.857426}
+{"op": "write", "latency_ms": 1289.5757500082254, "key": "k1", "status": 201, "version": 368, "stale": false, "delta_ms": null, "seq": 252, "ts": 1775451902.8577962}
+{"op": "write", "latency_ms": 1262.6465829962399, "key": "k22", "status": 201, "version": 377, "stale": false, "delta_ms": null, "seq": 261, "ts": 1775451902.8578281}
+{"op": "read", "read_path": "local_read", "latency_ms": 81.45425000111572, "key": "k18", "status": 200, "version": 301, "stale": false, "delta_ms": 5012.340124987531, "seq": 275, "ts": 1775451902.8842082}
+{"op": "read", "read_path": "local_read", "latency_ms": 47.51583401230164, "key": "k7", "status": 200, "version": 349, "stale": false, "delta_ms": 1317.8545830014627, "seq": 293, "ts": 1775451902.91605}
+{"op": "read", "read_path": "local_read", "latency_ms": 52.374124992638826, "key": "k9", "status": 200, "version": 361, "stale": false, "delta_ms": 1302.623625000706, "seq": 285, "ts": 1775451902.9169111}
+{"op": "read", "read_path": "local_read", "latency_ms": 57.732916000531986, "key": "k2", "status": 200, "version": 336, "stale": false, "delta_ms": 2557.2099589917343, "seq": 280, "ts": 1775451902.917635}
+{"op": "read", "read_path": "local_read", "latency_ms": 54.893708002055064, "key": "k29", "status": 200, "version": 355, "stale": false, "delta_ms": 1302.4573749862611, "seq": 283, "ts": 1775451902.918426}
+{"op": "read", "read_path": "local_read", "latency_ms": 55.1687499973923, "key": "k11", "status": 200, "version": 367, "stale": false, "delta_ms": 11.421749979490414, "seq": 288, "ts": 1775451902.921052}
+{"op": "read", "read_path": "local_read", "latency_ms": 56.39695801073685, "key": "k8", "status": 200, "version": 365, "stale": false, "delta_ms": 84.88441701047122, "seq": 287, "ts": 1775451902.9218318}
+{"op": "read", "read_path": "local_read", "latency_ms": 75.09241599473171, "key": "k38", "status": 200, "version": 383, "stale": false, "delta_ms": 0.8014590130187571, "seq": 276, "ts": 1775451902.932946}
+{"op": "read", "read_path": "local_read", "latency_ms": 66.93920900579542, "key": "k14", "status": 200, "version": 363, "stale": false, "delta_ms": 1309.5681249978952, "seq": 289, "ts": 1775451902.933256}
+{"op": "read", "read_path": "local_read", "latency_ms": 18.971874989802018, "key": "k19", "status": 200, "version": 372, "stale": false, "delta_ms": 72.67945798230357, "seq": 295, "ts": 1775451902.944659}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.030209004180506, "key": "k14", "status": 200, "version": 363, "stale": false, "delta_ms": 1374.2105000128504, "seq": 299, "ts": 1775451902.945996}
+{"op": "read", "read_path": "local_read", "latency_ms": 16.052207996835932, "key": "k5", "status": 200, "version": 373, "stale": false, "delta_ms": 75.14133301447146, "seq": 300, "ts": 1775451902.947894}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.42404201813042, "key": "k21", "status": 200, "version": 353, "stale": false, "delta_ms": 1376.266040984774, "seq": 296, "ts": 1775451902.952575}
+{"op": "read", "read_path": "local_read", "latency_ms": 10.022917005699128, "key": "k36", "status": 200, "version": 359, "stale": false, "delta_ms": 1396.117415977642, "seq": 304, "ts": 1775451902.956479}
+{"op": "read", "read_path": "local_read", "latency_ms": 11.092874978203326, "key": "k30", "status": 200, "version": 358, "stale": false, "delta_ms": 1389.0028340101708, "seq": 303, "ts": 1775451902.956555}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.665500023402274, "key": "k22", "status": 200, "version": 377, "stale": false, "delta_ms": 90.35929199308157, "seq": 305, "ts": 1775451902.957858}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.259790992364287, "key": "k13", "status": 200, "version": 381, "stale": false, "delta_ms": 101.53741700924002, "seq": 308, "ts": 1775451902.961237}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.5692080196458846, "key": "k26", "status": 200, "version": 374, "stale": false, "delta_ms": 105.6458749808371, "seq": 310, "ts": 1775451902.96285}
+{"op": "write", "latency_ms": 1264.1461250022985, "key": "k38", "status": 201, "version": 385, "stale": false, "delta_ms": null, "seq": 274, "ts": 1775451904.0496361}
+{"op": "write", "latency_ms": 1252.257209009258, "key": "k12", "status": 201, "version": 386, "stale": false, "delta_ms": null, "seq": 282, "ts": 1775451904.1151512}
+{"op": "write", "latency_ms": 1267.1378329978324, "key": "k2", "status": 201, "version": 388, "stale": false, "delta_ms": null, "seq": 278, "ts": 1775451904.1260521}
+{"op": "write", "latency_ms": 1266.7913750046864, "key": "k8", "status": 201, "version": 390, "stale": false, "delta_ms": null, "seq": 279, "ts": 1775451904.126244}
+{"op": "write", "latency_ms": 1261.4168750005774, "key": "k12", "status": 201, "version": 389, "stale": false, "delta_ms": null, "seq": 286, "ts": 1775451904.126462}
+{"op": "write", "latency_ms": 1259.1417919902597, "key": "k13", "status": 201, "version": 387, "stale": false, "delta_ms": null, "seq": 290, "ts": 1775451904.126512}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.508667021989822, "key": "k7", "status": 200, "version": 399, "stale": false, "delta_ms": 2576.9088749948423, "seq": 316, "ts": 1775451904.134017}
+{"op": "read", "read_path": "local_read", "latency_ms": 8.222042000852525, "key": "k6", "status": 200, "version": 347, "stale": false, "delta_ms": 2566.964999976335, "seq": 314, "ts": 1775451904.134763}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.552040998125449, "key": "k14", "status": 200, "version": 363, "stale": false, "delta_ms": 2577.325209014816, "seq": 318, "ts": 1775451904.136632}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.775459008058533, "key": "k5", "status": 200, "version": 373, "stale": false, "delta_ms": 1280.0220409990288, "seq": 320, "ts": 1775451904.1384902}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.6522499760612845, "key": "k14", "status": 200, "version": 363, "stale": false, "delta_ms": 2581.785750022391, "seq": 321, "ts": 1775451904.143191}
+{"op": "write", "latency_ms": 1234.144957998069, "key": "k12", "status": 201, "version": 404, "stale": false, "delta_ms": null, "seq": 311, "ts": 1775451904.197032}
+{"op": "write", "latency_ms": 1263.3949169830885, "key": "k25", "status": 201, "version": 393, "stale": false, "delta_ms": null, "seq": 301, "ts": 1775451904.197216}
+{"op": "write", "latency_ms": 1264.596209017327, "key": "k13", "status": 201, "version": 396, "stale": false, "delta_ms": null, "seq": 302, "ts": 1775451904.2000499}
+{"op": "write", "latency_ms": 1338.4430830192287, "key": "k2", "status": 201, "version": 391, "stale": false, "delta_ms": null, "seq": 281, "ts": 1775451904.200243}
+{"op": "write", "latency_ms": 1242.4823339970317, "key": "k18", "status": 201, "version": 403, "stale": false, "delta_ms": null, "seq": 309, "ts": 1775451904.200459}
+{"op": "write", "latency_ms": 1247.8551669919398, "key": "k15", "status": 201, "version": 401, "stale": false, "delta_ms": null, "seq": 306, "ts": 1775451904.200691}
+{"op": "write", "latency_ms": 1314.4655000069179, "key": "k7", "status": 201, "version": 399, "stale": false, "delta_ms": null, "seq": 294, "ts": 1775451904.200945}
+{"op": "write", "latency_ms": 1333.459584013326, "key": "k27", "status": 201, "version": 400, "stale": false, "delta_ms": null, "seq": 291, "ts": 1775451904.2012239}
+{"op": "write", "latency_ms": 1334.20508299605, "key": "k39", "status": 201, "version": 397, "stale": false, "delta_ms": null, "seq": 292, "ts": 1775451904.202324}
+{"op": "write", "latency_ms": 1275.7937500136904, "key": "k26", "status": 201, "version": 398, "stale": false, "delta_ms": null, "seq": 298, "ts": 1775451904.205591}
+{"op": "write", "latency_ms": 1249.3358749779873, "key": "k34", "status": 201, "version": 402, "stale": false, "delta_ms": null, "seq": 307, "ts": 1775451904.205906}
+{"op": "write", "latency_ms": 1277.4007089901716, "key": "k8", "status": 201, "version": 394, "stale": false, "delta_ms": null, "seq": 297, "ts": 1775451904.206196}
+{"op": "write", "latency_ms": 1348.0597920133732, "key": "k29", "status": 201, "version": 395, "stale": false, "delta_ms": null, "seq": 277, "ts": 1775451904.206495}
+{"op": "write", "latency_ms": 1342.815290990984, "key": "k20", "status": 201, "version": 392, "stale": false, "delta_ms": null, "seq": 284, "ts": 1775451904.206817}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.43900000373833, "key": "k30", "status": 200, "version": 358, "stale": false, "delta_ms": 2645.894874993246, "seq": 325, "ts": 1775451904.2238002}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.209875005297363, "key": "k29", "status": 200, "version": 395, "stale": false, "delta_ms": 2642.399124975782, "seq": 327, "ts": 1775451904.224679}
+{"op": "read", "read_path": "local_read", "latency_ms": 25.468583015026525, "key": "k11", "status": 200, "version": 367, "stale": false, "delta_ms": 1344.8520829842892, "seq": 324, "ts": 1775451904.224758}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.15766701172106, "key": "k28", "status": 200, "version": 344, "stale": false, "delta_ms": 3892.684582999209, "seq": 331, "ts": 1775451904.2283971}
+{"op": "read", "read_path": "local_read", "latency_ms": 24.29583398043178, "key": "k31", "status": 200, "version": 286, "stale": false, "delta_ms": 6426.6221660072915, "seq": 329, "ts": 1775451904.228627}
+{"op": "read", "read_path": "local_read", "latency_ms": 20.75312499073334, "key": "k34", "status": 200, "version": 402, "stale": false, "delta_ms": 2.006249997066334, "seq": 332, "ts": 1775451904.22867}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.146291019627824, "key": "k25", "status": 200, "version": 393, "stale": false, "delta_ms": 31.51124998112209, "seq": 340, "ts": 1775451904.233883}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.4199170186184347, "key": "k1", "status": 200, "version": 368, "stale": false, "delta_ms": 1376.13970800885, "seq": 343, "ts": 1775451904.237386}
+{"op": "read", "read_path": "local_read", "latency_ms": 8.455000002868474, "key": "k36", "status": 200, "version": 359, "stale": false, "delta_ms": 2679.256749979686, "seq": 342, "ts": 1775451904.238048}
+{"op": "write", "latency_ms": 1221.1716670135502, "key": "k11", "status": 201, "version": 405, "stale": false, "delta_ms": null, "seq": 312, "ts": 1775451905.270903}
+{"op": "write", "latency_ms": 1230.4779999831226, "key": "k32", "status": 201, "version": 406, "stale": false, "delta_ms": null, "seq": 313, "ts": 1775451905.345734}
+{"op": "write", "latency_ms": 1217.8974589915015, "key": "k8", "status": 201, "version": 410, "stale": false, "delta_ms": null, "seq": 322, "ts": 1775451905.361145}
+{"op": "write", "latency_ms": 1227.3335839854553, "key": "k1", "status": 201, "version": 409, "stale": false, "delta_ms": null, "seq": 319, "ts": 1775451905.3621938}
+{"op": "write", "latency_ms": 1236.3886660023127, "key": "k38", "status": 201, "version": 408, "stale": false, "delta_ms": null, "seq": 315, "ts": 1775451905.3634639}
+{"op": "write", "latency_ms": 1235.8702909841668, "key": "k24", "status": 201, "version": 407, "stale": false, "delta_ms": null, "seq": 317, "ts": 1775451905.363816}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.353875000262633, "key": "k28", "status": 200, "version": 344, "stale": false, "delta_ms": 5047.711833001813, "seq": 348, "ts": 1775451905.3696482}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.608124993974343, "key": "k4", "status": 200, "version": 423, "stale": false, "delta_ms": 10113.881334022153, "seq": 350, "ts": 1775451905.374206}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.866082988679409, "key": "k30", "status": 200, "version": 358, "stale": false, "delta_ms": 3817.810542008374, "seq": 353, "ts": 1775451905.378148}
+{"op": "write", "latency_ms": 1229.4974160031416, "key": "k4", "status": 201, "version": 419, "stale": false, "delta_ms": null, "seq": 337, "ts": 1775451905.4536982}
+{"op": "write", "latency_ms": 1251.0553329775576, "key": "k16", "status": 201, "version": 415, "stale": false, "delta_ms": null, "seq": 326, "ts": 1775451905.454072}
+{"op": "write", "latency_ms": 1250.4862080095336, "key": "k6", "status": 201, "version": 416, "stale": false, "delta_ms": null, "seq": 328, "ts": 1775451905.454419}
+{"op": "write", "latency_ms": 1229.1770419979002, "key": "k35", "status": 201, "version": 420, "stale": false, "delta_ms": null, "seq": 339, "ts": 1775451905.4547782}
+{"op": "write", "latency_ms": 1237.7384159772191, "key": "k15", "status": 201, "version": 421, "stale": false, "delta_ms": null, "seq": 338, "ts": 1775451905.462518}
+{"op": "write", "latency_ms": 1253.868333005812, "key": "k31", "status": 201, "version": 411, "stale": false, "delta_ms": null, "seq": 334, "ts": 1775451905.462881}
+{"op": "write", "latency_ms": 1253.9490839990322, "key": "k32", "status": 201, "version": 414, "stale": false, "delta_ms": null, "seq": 335, "ts": 1775451905.463371}
+{"op": "write", "latency_ms": 1258.9590410061646, "key": "k27", "status": 201, "version": 412, "stale": false, "delta_ms": null, "seq": 330, "ts": 1775451905.463796}
+{"op": "write", "latency_ms": 1255.8012920198962, "key": "k26", "status": 201, "version": 418, "stale": false, "delta_ms": null, "seq": 333, "ts": 1775451905.4642692}
+{"op": "write", "latency_ms": 1265.9377499949187, "key": "k3", "status": 201, "version": 413, "stale": false, "delta_ms": null, "seq": 323, "ts": 1775451905.46485}
+{"op": "write", "latency_ms": 1255.6049590057228, "key": "k3", "status": 201, "version": 417, "stale": false, "delta_ms": null, "seq": 336, "ts": 1775451905.465406}
+{"op": "write", "latency_ms": 1236.7390409926884, "key": "k18", "status": 201, "version": 422, "stale": false, "delta_ms": null, "seq": 341, "ts": 1775451905.465933}
+{"op": "write", "latency_ms": 1228.3653749909718, "key": "k31", "status": 201, "version": 424, "stale": false, "delta_ms": null, "seq": 345, "ts": 1775451905.466489}
+{"op": "write", "latency_ms": 1229.4625419890508, "key": "k4", "status": 201, "version": 423, "stale": false, "delta_ms": null, "seq": 344, "ts": 1775451905.4670599}
+{"op": "read", "read_path": "local_read", "latency_ms": 13.77449999563396, "key": "k25", "status": 200, "version": 393, "stale": false, "delta_ms": 1272.831624984974, "seq": 362, "ts": 1775451905.483836}
+{"op": "read", "read_path": "local_read", "latency_ms": 28.702624986181036, "key": "k8", "status": 200, "version": 410, "stale": false, "delta_ms": 99.68612500233576, "seq": 357, "ts": 1775451905.489537}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.58483300404623, "key": "k18", "status": 200, "version": 422, "stale": false, "delta_ms": 6.815250002546236, "seq": 365, "ts": 1775451905.492341}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.565458009717986, "key": "k29", "status": 200, "version": 395, "stale": false, "delta_ms": 1264.4572499848437, "seq": 363, "ts": 1775451905.492523}
+{"op": "read", "read_path": "local_read", "latency_ms": 18.426082999212667, "key": "k7", "status": 200, "version": 399, "stale": false, "delta_ms": 1273.2645419891924, "seq": 367, "ts": 1775451905.492641}
+{"op": "read", "read_path": "local_read", "latency_ms": 20.760041021276265, "key": "k9", "status": 200, "version": 361, "stale": false, "delta_ms": 3911.612833995605, "seq": 366, "ts": 1775451905.494269}
+{"op": "read", "read_path": "local_read", "latency_ms": 20.4821249935776, "key": "k21", "status": 200, "version": 353, "stale": false, "delta_ms": 3924.031250004191, "seq": 368, "ts": 1775451905.4953952}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.655832982389256, "key": "k23", "status": 200, "version": 342, "stale": false, "delta_ms": 5185.494958015624, "seq": 370, "ts": 1775451905.499677}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.339624989777803, "key": "k22", "status": 200, "version": 377, "stale": false, "delta_ms": 2636.8947500013746, "seq": 374, "ts": 1775451905.50107}
+{"op": "read", "read_path": "local_read", "latency_ms": 8.199374977266416, "key": "k35", "status": 200, "version": 420, "stale": false, "delta_ms": 38.875750004081056, "seq": 373, "ts": 1775451905.5018601}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.777500006137416, "key": "k33", "status": 200, "version": 380, "stale": false, "delta_ms": 2641.0205000138376, "seq": 375, "ts": 1775451905.502701}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.9956249927636236, "key": "k35", "status": 200, "version": 420, "stale": false, "delta_ms": 47.39129199879244, "seq": 378, "ts": 1775451905.505172}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.2414590241387486, "key": "k30", "status": 200, "version": 358, "stale": false, "delta_ms": 3946.3579999865033, "seq": 379, "ts": 1775451905.506061}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.9280000017024577, "key": "k5", "status": 200, "version": 373, "stale": false, "delta_ms": 2648.5249580000527, "seq": 380, "ts": 1775451905.5081432}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.804333007195964, "key": "k15", "status": 200, "version": 421, "stale": false, "delta_ms": 45.688999991398305, "seq": 382, "ts": 1775451905.518019}
+{"op": "write", "latency_ms": 1226.5093750029337, "key": "k2", "status": 201, "version": 425, "stale": false, "delta_ms": null, "seq": 346, "ts": 1775451906.497547}
+{"op": "write", "latency_ms": 1226.7874169920105, "key": "k7", "status": 201, "version": 427, "stale": false, "delta_ms": null, "seq": 351, "ts": 1775451906.5921621}
+{"op": "write", "latency_ms": 1229.4826669967733, "key": "k12", "status": 201, "version": 428, "stale": false, "delta_ms": null, "seq": 349, "ts": 1775451906.593361}
+{"op": "write", "latency_ms": 1225.3284589969553, "key": "k31", "status": 201, "version": 429, "stale": false, "delta_ms": null, "seq": 352, "ts": 1775451906.595306}
+{"op": "write", "latency_ms": 1251.1050419998355, "key": "k38", "status": 201, "version": 426, "stale": false, "delta_ms": null, "seq": 347, "ts": 1775451906.596938}
+{"op": "write", "latency_ms": 1221.0162910050713, "key": "k8", "status": 201, "version": 430, "stale": false, "delta_ms": null, "seq": 354, "ts": 1775451906.599217}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.55737500730902, "key": "k12", "status": 200, "version": 433, "stale": false, "delta_ms": 4.98404199606739, "seq": 388, "ts": 1775451906.605928}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.925499988952652, "key": "k38", "status": 200, "version": 426, "stale": false, "delta_ms": 1229.9539170053322, "seq": 385, "ts": 1775451906.609359}
+{"op": "read", "read_path": "local_read", "latency_ms": 14.134708006167784, "key": "k11", "status": 200, "version": 405, "stale": false, "delta_ms": 1326.0781249846332, "seq": 387, "ts": 1775451906.611116}
+{"op": "read", "read_path": "local_read", "latency_ms": 11.420875001931563, "key": "k30", "status": 200, "version": 444, "stale": false, "delta_ms": 5043.523208994884, "seq": 389, "ts": 1775451906.6114151}
+{"op": "read", "read_path": "local_read", "latency_ms": 7.856374984839931, "key": "k35", "status": 200, "version": 420, "stale": false, "delta_ms": 1151.6180830076337, "seq": 390, "ts": 1775451906.6142678}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.085791013902053, "key": "k13", "status": 200, "version": 396, "stale": false, "delta_ms": 2411.497333989246, "seq": 392, "ts": 1775451906.617642}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.715582974720746, "key": "k26", "status": 200, "version": 436, "stale": false, "delta_ms": 1147.7970840060152, "seq": 393, "ts": 1775451906.61879}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.4925829861313105, "key": "k23", "status": 200, "version": 342, "stale": false, "delta_ms": 6309.992833004799, "seq": 394, "ts": 1775451906.61901}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.4937919990625232, "key": "k31", "status": 200, "version": 429, "stale": false, "delta_ms": 24.179083004128188, "seq": 397, "ts": 1775451906.622985}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.9889579745940864, "key": "k22", "status": 200, "version": 377, "stale": false, "delta_ms": 3765.1919170166366, "seq": 398, "ts": 1775451906.626017}
+{"op": "write", "latency_ms": 1240.2623329835478, "key": "k14", "status": 201, "version": 432, "stale": false, "delta_ms": null, "seq": 355, "ts": 1775451906.699637}
+{"op": "write", "latency_ms": 1238.5272910178173, "key": "k26", "status": 201, "version": 431, "stale": false, "delta_ms": null, "seq": 358, "ts": 1775451906.700095}
+{"op": "write", "latency_ms": 1235.3048330114689, "key": "k12", "status": 201, "version": 433, "stale": false, "delta_ms": null, "seq": 360, "ts": 1775451906.7035499}
+{"op": "write", "latency_ms": 1235.3325419826433, "key": "k8", "status": 201, "version": 435, "stale": false, "delta_ms": null, "seq": 364, "ts": 1775451906.707231}
+{"op": "write", "latency_ms": 1223.0263749952428, "key": "k17", "status": 201, "version": 434, "stale": false, "delta_ms": null, "seq": 369, "ts": 1775451906.707407}
+{"op": "read", "read_path": "local_read", "latency_ms": 11.760958994273096, "key": "k7", "status": 200, "version": 427, "stale": false, "delta_ms": 108.06425000191666, "seq": 400, "ts": 1775451906.712002}
+{"op": "read", "read_path": "local_read", "latency_ms": 23.23437502491288, "key": "k26", "status": 200, "version": 436, "stale": false, "delta_ms": 1.13516699639149, "seq": 401, "ts": 1775451906.72448}
+{"op": "read", "read_path": "local_read", "latency_ms": 14.093625009991229, "key": "k18", "status": 200, "version": 442, "stale": false, "delta_ms": 1246.1757920100354, "seq": 405, "ts": 1775451906.726209}
+{"op": "read", "read_path": "local_read", "latency_ms": 22.505000000819564, "key": "k26", "status": 200, "version": 436, "stale": false, "delta_ms": 3.6424169957172126, "seq": 402, "ts": 1775451906.7262442}
+{"op": "read", "read_path": "local_read", "latency_ms": 20.286874991143122, "key": "k26", "status": 200, "version": 436, "stale": false, "delta_ms": 7.339959003729746, "seq": 403, "ts": 1775451906.727726}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.714875001227483, "key": "k22", "status": 200, "version": 377, "stale": false, "delta_ms": 3850.3590830077883, "seq": 404, "ts": 1775451906.727905}
+{"op": "write", "latency_ms": 1261.386957979994, "key": "k32", "status": 201, "version": 438, "stale": false, "delta_ms": null, "seq": 361, "ts": 1775451906.73055}
+{"op": "write", "latency_ms": 1237.7346669964027, "key": "k17", "status": 201, "version": 440, "stale": false, "delta_ms": null, "seq": 372, "ts": 1775451906.730768}
+{"op": "write", "latency_ms": 1229.687915998511, "key": "k18", "status": 201, "version": 442, "stale": false, "delta_ms": null, "seq": 377, "ts": 1775451906.730999}
+{"op": "write", "latency_ms": 1238.535459007835, "key": "k8", "status": 201, "version": 439, "stale": false, "delta_ms": null, "seq": 371, "ts": 1775451906.7311869}
+{"op": "write", "latency_ms": 1271.2255840015132, "key": "k20", "status": 201, "version": 437, "stale": false, "delta_ms": null, "seq": 356, "ts": 1775451906.731389}
+{"op": "write", "latency_ms": 1264.444917003857, "key": "k26", "status": 201, "version": 436, "stale": false, "delta_ms": null, "seq": 359, "ts": 1775451906.7317052}
+{"op": "write", "latency_ms": 1225.768167001661, "key": "k5", "status": 201, "version": 443, "stale": false, "delta_ms": null, "seq": 381, "ts": 1775451906.7318678}
+{"op": "write", "latency_ms": 1218.4785839926917, "key": "k30", "status": 201, "version": 444, "stale": false, "delta_ms": null, "seq": 383, "ts": 1775451906.7365298}
+{"op": "write", "latency_ms": 1236.925125005655, "key": "k18", "status": 201, "version": 441, "stale": false, "delta_ms": null, "seq": 376, "ts": 1775451906.736804}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.35391701408662, "key": "k3", "status": 200, "version": 417, "stale": false, "delta_ms": 1259.1013750061393, "seq": 406, "ts": 1775451906.7438731}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.033958000363782, "key": "k23", "status": 200, "version": 342, "stale": false, "delta_ms": 6421.747582993703, "seq": 407, "ts": 1775451906.745306}
+{"op": "read", "read_path": "local_read", "latency_ms": 20.417624997207895, "key": "k9", "status": 200, "version": 361, "stale": false, "delta_ms": 5165.204874996562, "seq": 408, "ts": 1775451906.747515}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.294000005582348, "key": "k21", "status": 200, "version": 353, "stale": false, "delta_ms": 5177.395915990928, "seq": 410, "ts": 1775451906.749572}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.34033302636817, "key": "k4", "status": 200, "version": 423, "stale": false, "delta_ms": 1267.0545829751063, "seq": 417, "ts": 1775451906.751462}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.292292010504752, "key": "k20", "status": 200, "version": 437, "stale": false, "delta_ms": 1.5968329971656203, "seq": 414, "ts": 1775451906.752286}
+{"op": "read", "read_path": "local_read", "latency_ms": 16.87175000552088, "key": "k18", "status": 200, "version": 446, "stale": false, "delta_ms": 0.9477919957134873, "seq": 418, "ts": 1775451906.754633}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.484374986030161, "key": "k21", "status": 200, "version": 353, "stale": false, "delta_ms": 5197.449708008207, "seq": 422, "ts": 1775451906.754816}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.039666004246101, "key": "k3", "status": 200, "version": 417, "stale": false, "delta_ms": 1288.0047090002336, "seq": 425, "ts": 1775451906.7574558}
+{"op": "read", "read_path": "local_read", "latency_ms": 12.64491700567305, "key": "k24", "status": 200, "version": 447, "stale": false, "delta_ms": 1382.1602499810979, "seq": 421, "ts": 1775451906.758625}
+{"op": "read", "read_path": "local_read", "latency_ms": 10.784791986225173, "key": "k29", "status": 200, "version": 395, "stale": false, "delta_ms": 2543.330207990948, "seq": 423, "ts": 1775451906.7606158}
+{"op": "read", "read_path": "local_read", "latency_ms": 6.39304198557511, "key": "k33", "status": 200, "version": 380, "stale": false, "delta_ms": 3900.503708020551, "seq": 427, "ts": 1775451906.7617972}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.804083011345938, "key": "k25", "status": 200, "version": 393, "stale": false, "delta_ms": 2561.705999978585, "seq": 429, "ts": 1775451906.762729}
+{"op": "read", "read_path": "local_read", "latency_ms": 1.5525830094702542, "key": "k34", "status": 200, "version": 402, "stale": false, "delta_ms": 2556.020041985903, "seq": 431, "ts": 1775451906.763484}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.3184999881777912, "key": "k16", "status": 200, "version": 415, "stale": false, "delta_ms": 1309.4519170117564, "seq": 433, "ts": 1775451906.765845}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.051584015134722, "key": "k24", "status": 200, "version": 447, "stale": false, "delta_ms": 1402.057999977842, "seq": 434, "ts": 1775451906.7679281}
+{"op": "write", "latency_ms": 1222.8171250026207, "key": "k31", "status": 201, "version": 445, "stale": false, "delta_ms": null, "seq": 384, "ts": 1775451907.720481}
+{"op": "write", "latency_ms": 1244.1852090123575, "key": "k18", "status": 201, "version": 446, "stale": false, "delta_ms": null, "seq": 386, "ts": 1775451907.8401191}
+{"op": "write", "latency_ms": 1228.6094579903875, "key": "k4", "status": 201, "version": 448, "stale": false, "delta_ms": null, "seq": 395, "ts": 1775451907.8465889}
+{"op": "write", "latency_ms": 1245.8505410177168, "key": "k24", "status": 201, "version": 447, "stale": false, "delta_ms": null, "seq": 391, "ts": 1775451907.85568}
+{"op": "write", "latency_ms": 1236.8945000052918, "key": "k15", "status": 201, "version": 449, "stale": false, "delta_ms": null, "seq": 396, "ts": 1775451907.8559449}
+{"op": "write", "latency_ms": 1230.0084169837646, "key": "k19", "status": 201, "version": 450, "stale": false, "delta_ms": null, "seq": 399, "ts": 1775451907.8560581}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.52375000109896, "key": "k35", "status": 200, "version": 458, "stale": false, "delta_ms": 2385.6956670060754, "seq": 437, "ts": 1775451907.860018}
+{"op": "read", "read_path": "local_read", "latency_ms": 14.732917014043778, "key": "k29", "status": 200, "version": 395, "stale": false, "delta_ms": 3640.446499979589, "seq": 438, "ts": 1775451907.861685}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.474832996493205, "key": "k30", "status": 200, "version": 462, "stale": false, "delta_ms": 1123.580875020707, "seq": 442, "ts": 1775451907.8646011}
+{"op": "write", "latency_ms": 1252.3603329900652, "key": "k7", "status": 201, "version": 451, "stale": false, "delta_ms": null, "seq": 413, "ts": 1775451907.98504}
+{"op": "write", "latency_ms": 1224.6874999837019, "key": "k30", "status": 201, "version": 462, "stale": false, "delta_ms": null, "seq": 430, "ts": 1775451907.985386}
+{"op": "write", "latency_ms": 1247.5677499896847, "key": "k0", "status": 201, "version": 457, "stale": false, "delta_ms": null, "seq": 419, "ts": 1775451907.985822}
+{"op": "write", "latency_ms": 1254.3614589958452, "key": "k11", "status": 201, "version": 452, "stale": false, "delta_ms": null, "seq": 411, "ts": 1775451907.986252}
+{"op": "write", "latency_ms": 1228.8257080072071, "key": "k38", "status": 201, "version": 461, "stale": false, "delta_ms": null, "seq": 428, "ts": 1775451907.986675}
+{"op": "write", "latency_ms": 1232.122666988289, "key": "k6", "status": 201, "version": 459, "stale": false, "delta_ms": null, "seq": 426, "ts": 1775451907.987201}
+{"op": "write", "latency_ms": 1261.8731670081615, "key": "k23", "status": 201, "version": 456, "stale": false, "delta_ms": null, "seq": 416, "ts": 1775451907.9956}
+{"op": "write", "latency_ms": 1262.57625001017, "key": "k12", "status": 201, "version": 455, "stale": false, "delta_ms": null, "seq": 415, "ts": 1775451907.995959}
+{"op": "write", "latency_ms": 1251.6775410040282, "key": "k15", "status": 201, "version": 460, "stale": false, "delta_ms": null, "seq": 420, "ts": 1775451907.996346}
+{"op": "write", "latency_ms": 1233.9829170086887, "key": "k21", "status": 201, "version": 463, "stale": false, "delta_ms": null, "seq": 432, "ts": 1775451907.996774}
+{"op": "write", "latency_ms": 1264.9244159983937, "key": "k3", "status": 201, "version": 454, "stale": false, "delta_ms": null, "seq": 412, "ts": 1775451907.997235}
+{"op": "write", "latency_ms": 1245.418874983443, "key": "k35", "status": 201, "version": 458, "stale": false, "delta_ms": null, "seq": 424, "ts": 1775451907.9977212}
+{"op": "write", "latency_ms": 1270.3131250164006, "key": "k21", "status": 201, "version": 453, "stale": false, "delta_ms": null, "seq": 409, "ts": 1775451907.9982378}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.950041997712106, "key": "k1", "status": 200, "version": 409, "stale": false, "delta_ms": 2632.309875014471, "seq": 450, "ts": 1775451908.0104692}
+{"op": "write", "latency_ms": 1244.724583986681, "key": "k3", "status": 201, "version": 464, "stale": false, "delta_ms": null, "seq": 435, "ts": 1775451908.012695}
+{"op": "read", "read_path": "local_read", "latency_ms": 26.837832992896438, "key": "k37", "status": 200, "version": 362, "stale": false, "delta_ms": 6432.820707996143, "seq": 446, "ts": 1775451908.0183501}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.640542006120086, "key": "k11", "status": 200, "version": 452, "stale": false, "delta_ms": 16.109249991131946, "seq": 456, "ts": 1775451908.0200078}
+{"op": "read", "read_path": "local_read", "latency_ms": 28.436791995773092, "key": "k27", "status": 200, "version": 412, "stale": false, "delta_ms": 2528.4570829826407, "seq": 447, "ts": 1775451908.020694}
+{"op": "read", "read_path": "local_read", "latency_ms": 19.618417019955814, "key": "k37", "status": 200, "version": 362, "stale": false, "delta_ms": 6443.028540990781, "seq": 455, "ts": 1775451908.0213351}
+{"op": "read", "read_path": "local_read", "latency_ms": 13.333041017176583, "key": "k24", "status": 200, "version": 447, "stale": false, "delta_ms": 155.34291698713787, "seq": 458, "ts": 1775451908.024363}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.049041982507333, "key": "k39", "status": 200, "version": 397, "stale": false, "delta_ms": 3816.8696670036297, "seq": 460, "ts": 1775451908.028249}
+{"op": "read", "read_path": "local_read", "latency_ms": 2.2928329999558628, "key": "k37", "status": 200, "version": 362, "stale": false, "delta_ms": 6469.792082993081, "seq": 465, "ts": 1775451908.030772}
+{"op": "write", "latency_ms": 1224.7235420218203, "key": "k0", "status": 201, "version": 465, "stale": false, "delta_ms": null, "seq": 436, "ts": 1775451908.945289}
+{"op": "write", "latency_ms": 1224.801167001715, "key": "k16", "status": 201, "version": 470, "stale": false, "delta_ms": null, "seq": 444, "ts": 1775451909.0894778}
+{"op": "write", "latency_ms": 1227.907916996628, "key": "k35", "status": 201, "version": 469, "stale": false, "delta_ms": null, "seq": 443, "ts": 1775451909.089823}
+{"op": "write", "latency_ms": 1234.0128750074655, "key": "k2", "status": 201, "version": 466, "stale": false, "delta_ms": null, "seq": 439, "ts": 1775451909.090157}
+{"op": "write", "latency_ms": 1236.7742090136744, "key": "k33", "status": 201, "version": 468, "stale": false, "delta_ms": null, "seq": 441, "ts": 1775451909.093955}
+{"op": "write", "latency_ms": 1237.7592090051621, "key": "k33", "status": 201, "version": 467, "stale": false, "delta_ms": null, "seq": 440, "ts": 1775451909.094313}
+{"op": "read", "read_path": "local_read", "latency_ms": 8.6039160087239, "key": "k34", "status": 200, "version": 402, "stale": false, "delta_ms": 4887.121291976655, "seq": 470, "ts": 1775451909.1016681}
+{"op": "read", "read_path": "local_read", "latency_ms": 12.472790986066684, "key": "k5", "status": 200, "version": 484, "stale": false, "delta_ms": 2359.3799590016715, "seq": 468, "ts": 1775451909.103738}
+{"op": "read", "read_path": "local_read", "latency_ms": 9.864999999990687, "key": "k33", "status": 200, "version": 468, "stale": false, "delta_ms": 1.1060829856432974, "seq": 472, "ts": 1775451909.1052978}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.906957998173311, "key": "k10", "status": 200, "version": 483, "stale": false, "delta_ms": 6250.61379201361, "seq": 474, "ts": 1775451909.109271}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.195625009946525, "key": "k25", "status": 200, "version": 393, "stale": false, "delta_ms": 4908.1284159910865, "seq": 475, "ts": 1775451909.1105542}
+{"op": "read", "read_path": "local_read", "latency_ms": 3.9386659918818623, "key": "k37", "status": 200, "version": 476, "stale": false, "delta_ms": 7550.62925000675, "seq": 476, "ts": 1775451909.11326}
+{"op": "write", "latency_ms": 1245.1268750010058, "key": "k1", "status": 201, "version": 477, "stale": false, "delta_ms": null, "seq": 451, "ts": 1775451909.2437649}
+{"op": "write", "latency_ms": 1223.4039579925593, "key": "k39", "status": 201, "version": 478, "stale": false, "delta_ms": null, "seq": 461, "ts": 1775451909.2441201}
+{"op": "write", "latency_ms": 1244.9835000152234, "key": "k39", "status": 201, "version": 475, "stale": false, "delta_ms": null, "seq": 452, "ts": 1775451909.244535}
+{"op": "write", "latency_ms": 1231.558416999178, "key": "k14", "status": 201, "version": 479, "stale": false, "delta_ms": null, "seq": 459, "ts": 1775451909.245047}
+{"op": "write", "latency_ms": 1223.5045000270475, "key": "k0", "status": 201, "version": 481, "stale": false, "delta_ms": null, "seq": 462, "ts": 1775451909.245505}
+{"op": "write", "latency_ms": 1252.088959008688, "key": "k32", "status": 201, "version": 480, "stale": false, "delta_ms": null, "seq": 453, "ts": 1775451909.252484}
+{"op": "write", "latency_ms": 1251.8730830051936, "key": "k37", "status": 201, "version": 476, "stale": false, "delta_ms": null, "seq": 454, "ts": 1775451909.252993}
+{"op": "write", "latency_ms": 1250.3656659973785, "key": "k10", "status": 201, "version": 473, "stale": false, "delta_ms": null, "seq": 457, "ts": 1775451909.2534342}
+{"op": "write", "latency_ms": 1263.4004160063341, "key": "k8", "status": 201, "version": 472, "stale": false, "delta_ms": null, "seq": 445, "ts": 1775451909.253909}
+{"op": "write", "latency_ms": 1260.6707079976331, "key": "k11", "status": 201, "version": 471, "stale": false, "delta_ms": null, "seq": 449, "ts": 1775451909.2543411}
+{"op": "write", "latency_ms": 1261.8874580075499, "key": "k23", "status": 201, "version": 474, "stale": false, "delta_ms": null, "seq": 448, "ts": 1775451909.2547982}
+{"op": "write", "latency_ms": 1231.203082978027, "key": "k5", "status": 201, "version": 484, "stale": false, "delta_ms": null, "seq": 466, "ts": 1775451909.262008}
+{"op": "write", "latency_ms": 1240.028500003973, "key": "k10", "status": 201, "version": 483, "stale": false, "delta_ms": null, "seq": 463, "ts": 1775451909.2623959}
+{"op": "write", "latency_ms": 1239.3437499995343, "key": "k10", "status": 201, "version": 482, "stale": false, "delta_ms": null, "seq": 464, "ts": 1775451909.264076}
+{"op": "read", "read_path": "local_read", "latency_ms": 15.18295900314115, "key": "k2", "status": 200, "version": 466, "stale": false, "delta_ms": 164.99116600607522, "seq": 484, "ts": 1775451909.270345}
+{"op": "read", "read_path": "local_read", "latency_ms": 27.898125001229346, "key": "k8", "status": 200, "version": 472, "stale": false, "delta_ms": 2518.9356670016423, "seq": 481, "ts": 1775451909.278031}
+{"op": "read", "read_path": "local_read", "latency_ms": 29.99637500033714, "key": "k36", "status": 200, "version": 359, "stale": false, "delta_ms": 7697.894165990874, "seq": 479, "ts": 1775451909.278223}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.571833989582956, "key": "k6", "status": 200, "version": 459, "stale": false, "delta_ms": 1271.0494580096565, "seq": 488, "ts": 1775451909.279825}
+{"op": "read", "read_path": "local_read", "latency_ms": 21.021291002398357, "key": "k1", "status": 200, "version": 477, "stale": false, "delta_ms": 15.273708995664492, "seq": 489, "ts": 1775451909.280061}
+{"op": "read", "read_path": "local_read", "latency_ms": 17.403624980943277, "key": "k3", "status": 200, "version": 464, "stale": false, "delta_ms": 1251.9569170253817, "seq": 491, "ts": 1775451909.282059}
+{"op": "read", "read_path": "local_read", "latency_ms": 16.089542012196034, "key": "k14", "status": 200, "version": 479, "stale": false, "delta_ms": 21.163333003642038, "seq": 492, "ts": 1775451909.282302}
+{"op": "read", "read_path": "local_read", "latency_ms": 14.044665993424132, "key": "k6", "status": 200, "version": 459, "stale": false, "delta_ms": 1284.15041702101, "seq": 493, "ts": 1775451909.2854059}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.027084000175819, "key": "k9", "status": 200, "version": 361, "stale": false, "delta_ms": 7719.020999997156, "seq": 497, "ts": 1775451909.285936}
+{"op": "read", "read_path": "local_read", "latency_ms": 4.558041982818395, "key": "k8", "status": 200, "version": 472, "stale": false, "delta_ms": 29.248708015074953, "seq": 499, "ts": 1775451909.287721}
+{"op": "read", "read_path": "local_read", "latency_ms": 5.9773749962914735, "key": "k15", "status": 200, "version": 460, "stale": false, "delta_ms": 1286.4449580083601, "seq": 498, "ts": 1775451909.288772}
+{"op": "write", "latency_ms": 1230.323166004382, "key": "k7", "status": 201, "version": 485, "stale": false, "delta_ms": null, "seq": 467, "ts": 1775451910.175678}
+{"op": "write", "latency_ms": 1228.8390829926357, "key": "k24", "status": 201, "version": 487, "stale": false, "delta_ms": null, "seq": 471, "ts": 1775451910.323516}
+{"op": "write", "latency_ms": 1232.971292018192, "key": "k16", "status": 201, "version": 486, "stale": false, "delta_ms": null, "seq": 469, "ts": 1775451910.3253179}
+{"op": "write", "latency_ms": 1218.110167013947, "key": "k26", "status": 201, "version": 490, "stale": false, "delta_ms": null, "seq": 478, "ts": 1775451910.331417}
+{"op": "write", "latency_ms": 1221.3689170021098, "key": "k2", "status": 201, "version": 489, "stale": false, "delta_ms": null, "seq": 477, "ts": 1775451910.332056}
+{"op": "write", "latency_ms": 1230.834332993254, "key": "k18", "status": 201, "version": 488, "stale": false, "delta_ms": null, "seq": 473, "ts": 1775451910.332646}
+{"op": "write", "latency_ms": 1233.8710839976557, "key": "k26", "status": 201, "version": 492, "stale": false, "delta_ms": null, "seq": 487, "ts": 1775451910.491484}
+{"op": "write", "latency_ms": 1240.7574160024524, "key": "k29", "status": 201, "version": 491, "stale": false, "delta_ms": null, "seq": 483, "ts": 1775451910.492241}
+{"op": "write", "latency_ms": 1242.2128339821938, "key": "k15", "status": 201, "version": 494, "stale": false, "delta_ms": null, "seq": 485, "ts": 1775451910.4982479}
+{"op": "write", "latency_ms": 1242.7232079789974, "key": "k19", "status": 201, "version": 493, "stale": false, "delta_ms": null, "seq": 486, "ts": 1775451910.4996212}
+{"op": "write", "latency_ms": 1252.1152080153115, "key": "k8", "status": 201, "version": 496, "stale": false, "delta_ms": null, "seq": 480, "ts": 1775451910.50145}
+{"op": "write", "latency_ms": 1251.5242499939632, "key": "k31", "status": 201, "version": 495, "stale": false, "delta_ms": null, "seq": 482, "ts": 1775451910.502434}
+{"op": "write", "latency_ms": 1244.3974589987192, "key": "k28", "status": 201, "version": 500, "stale": false, "delta_ms": null, "seq": 490, "ts": 1775451910.5085042}
+{"op": "write", "latency_ms": 1230.0351249868982, "key": "k20", "status": 201, "version": 499, "stale": false, "delta_ms": null, "seq": 495, "ts": 1775451910.509349}
+{"op": "write", "latency_ms": 1229.7413750202395, "key": "k1", "status": 201, "version": 498, "stale": false, "delta_ms": null, "seq": 496, "ts": 1775451910.510289}
+{"op": "write", "latency_ms": 1232.6793749816716, "key": "k11", "status": 201, "version": 497, "stale": false, "delta_ms": null, "seq": 494, "ts": 1775451910.511654}

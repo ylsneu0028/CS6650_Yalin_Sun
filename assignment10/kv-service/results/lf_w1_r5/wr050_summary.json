@@ -1,0 +1,12 @@
+{
+  "mode": "lf_w1_r5",
+  "write_ratio": 0.5,
+  "requests": 2500,
+  "concurrency": 40,
+  "keys": 40,
+  "read_count": 1263,
+  "write_count": 1237,
+  "writes_201": 1237,
+  "stale_reads": 0,
+  "stale_rate_reads": 0.0
+}

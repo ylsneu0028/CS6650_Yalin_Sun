@@ -1,0 +1,59 @@
+# Leaderless cluster: W=N, R=1. Any node accepts writes (coordinator) and reads (local only).
+# Same API as Leader–Follower; use KV_ROLE=leaderless on every replica.
+# Example hit node A for write, node B for read to observe transient staleness under load.
+
+x-node: &node
+  build: ./src
+  networks: [kvnet]
+
+x-kv: &kv_env
+  KV_N: "5"
+  KV_ROLE: leaderless
+  KV_R: "1"
+  KV_W: "5"
+  KV_ALL_URLS: "http://ll-1:8080,http://ll-2:8080,http://ll-3:8080,http://ll-4:8080,http://ll-5:8080"
+
+networks:
+  kvnet: {}
+
+services:
+  ll-1:
+    <<: *node
+    ports:
+      - "8081:8080"
+    environment:
+      <<: *kv_env
+      PORT: "8080"
+      KV_SELF_URL: http://ll-1:8080
+  ll-2:
+    <<: *node
+    ports:
+      - "8082:8080"
+    environment:
+      <<: *kv_env
+      PORT: "8080"
+      KV_SELF_URL: http://ll-2:8080
+  ll-3:
+    <<: *node
+    ports:
+      - "8083:8080"
+    environment:
+      <<: *kv_env
+      PORT: "8080"
+      KV_SELF_URL: http://ll-3:8080
+  ll-4:
+    <<: *node
+    ports:
+      - "8084:8080"
+    environment:
+      <<: *kv_env
+      PORT: "8080"
+      KV_SELF_URL: http://ll-4:8080
+  ll-5:
+    <<: *node
+    ports:
+      - "8085:8080"
+    environment:
+      <<: *kv_env
+      PORT: "8080"
+      KV_SELF_URL: http://ll-5:8080

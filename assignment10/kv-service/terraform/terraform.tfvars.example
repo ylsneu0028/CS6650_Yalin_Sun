@@ -1,0 +1,27 @@
+# Copy to terraform.tfvars and adjust.
+#
+# aws_region   = "us-west-2"
+# vpc_id       = "" # set if no default VPC
+# kv_role      = "standalone"
+# kv_peer_urls = ""
+#
+# IAM: default create_ecs_iam_role = true (personal AWS; no LabRole needed).
+# AWS Learner Lab (uses pre-created LabRole, often cannot create roles):
+#   create_ecs_iam_role = false
+#   ecs_iam_role_name   = "LabRole"
+#
+# Leader–Follower (5 nodes) — set on each task / tfvars as needed:
+#   kv_n = 5
+#   kv_r = 1   # 1 | 3 | 5
+#   kv_w = 5   # 1 | 3 | 5
+#   kv_peer_urls   = "http://..."   # leader only: four followers
+#   kv_all_urls    = "http://leader,http://f1,http://f2,http://f3,http://f4"
+#   kv_leader_url  = "http://leader:8080"   # followers
+#   kv_self_url    = "http://this-task:8080"
+#
+# Leaderless (Part III, W=N R=1 on every node):
+#   kv_role       = "leaderless"
+#   kv_n          = 5
+#   kv_all_urls   = "http://...,..."  # all N replicas (same string on each task)
+#   kv_self_url   = "http://this-task-only:8080"
+#   # kv_r / kv_w ignored at runtime; server forces R=1, W=N
