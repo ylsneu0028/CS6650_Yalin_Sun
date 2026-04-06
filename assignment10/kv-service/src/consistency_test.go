@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
+	"math/rand"
 	"net/http"
 	"net/http/httptest"
 	"sync"
@@ -176,19 +177,24 @@ func TestLeaderlessInconsistencyWindowThenConsistent(t *testing.T) {
 	a.cfg.SelfURL = tsA.URL
 	b.cfg.SelfURL = tsB.URL
 
+	coordURL, otherURL := tsA.URL, tsB.URL
+	if rand.Intn(2) == 1 {
+		coordURL, otherURL = otherURL, coordURL
+	}
+
 	client := &http.Client{Timeout: 30 * time.Second}
 
 	var wg sync.WaitGroup
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
-		_, _ = client.Post(tsA.URL+"/set", "application/json", bytes.NewReader([]byte(`{"key":"ll","value":"coord"}`)))
+		_, _ = client.Post(coordURL+"/set", "application/json", bytes.NewReader([]byte(`{"key":"ll","value":"coord"}`)))
 	}()
 
 	inconsistent := false
 	deadline := time.Now().Add(300 * time.Millisecond)
 	for time.Now().Before(deadline) {
-		g, err := client.Get(tsB.URL + "/get?key=ll")
+		g, err := client.Get(otherURL + "/get?key=ll")
 		if err != nil {
 			time.Sleep(3 * time.Millisecond)
 			continue
@@ -207,7 +213,7 @@ func TestLeaderlessInconsistencyWindowThenConsistent(t *testing.T) {
 		t.Log("note: did not catch GET on peer before replicate finished (timing-dependent)")
 	}
 
-	ga, err := client.Get(tsA.URL + "/get?key=ll")
+	ga, err := client.Get(coordURL + "/get?key=ll")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -220,7 +226,7 @@ func TestLeaderlessInconsistencyWindowThenConsistent(t *testing.T) {
 		t.Fatalf("coordinator body %q", ba)
 	}
 
-	gb, err := client.Get(tsB.URL + "/get?key=ll")
+	gb, err := client.Get(otherURL + "/get?key=ll")
 	if err != nil {
 		t.Fatal(err)
 	}
