@@ -13,5 +13,5 @@ variable "project" {
 variable "desired_count" {
   type        = number
   description = "Number of Fargate tasks (more tasks spread photo/list load). Default 1 avoids Fargate vCPU account limits (4 tasks × 4 vCPU/task exceeds many defaults)."
-  default     = 1
+  default     = 2
 }

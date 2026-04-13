@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"log"
 	"net/http"
 	"os"
@@ -30,7 +31,7 @@ func main() {
 		log.Fatal("ALBUMS_TABLE, PHOTOS_TABLE, and S3_BUCKET must be set")
 	}
 
-	cfg, err := awsconfig.LoadDefaultConfig(nil, awsconfig.WithRegion(region))
+	cfg, err := awsconfig.LoadDefaultConfig(context.Background(), awsconfig.WithRegion(region))
 	if err != nil {
 		log.Fatalf("aws config: %v", err)
 	}

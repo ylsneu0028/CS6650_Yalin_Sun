@@ -304,8 +304,10 @@ RESULT_JSON = r"""
 }
 """
 
+
 def data():
     return json.loads(RESULT_JSON)
 
-if __name__ == '__main__':
-    print(RESULT_JSON)
+
+if __name__ == "__main__":
+    print(json.dumps(data(), indent=2))
