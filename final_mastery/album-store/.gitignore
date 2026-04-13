@@ -1,0 +1,5 @@
+/server
+*.tfstate
+*.tfstate.*
+.terraform/
+*.zip
